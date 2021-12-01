@@ -477,33 +477,18 @@ Entry Wire Line
 Text Label 10000 8300 2    138  ~ 0
 MOSI.M
 $Comp
-L eo-engine:Вилка*PLD*6контактов*2ряда*вертикальная*AVR XP2
-U 1 1 6197BBCB
-P 6250 8000
-F 0 "XP2" H 7150 8300 138 0000 L CNN
-F 1 "Вилка*PLD*6контактов*2ряда*вертикальная*AVR" H 6250 8500 50  0001 C CNN
-F 2 "N_X:Вилка_PLD6_вертикальная_AB" H 6250 8700 50  0001 C CNN
-F 3 "" H 6250 8000 50  0001 C CNN
-F 4 "PLD6" H 6750 7100 138 0000 L CNN "INFO"
-F 5 "https://www.chipdip.ru/product/pld-6" H 6250 8600 50  0001 C CNN "LINK"
-	1    6250 8000
-	1    0    0    -1  
-$EndComp
-$Comp
 L eo-engine:#метка-GND #GND2
 U 1 1 6197CC43
-P 8000 8750
-F 0 "#GND2" H 8000 8800 50  0001 C CNN
-F 1 "#метка-GND" H 8050 8900 50  0001 C CNN
-F 2 "" H 8000 8750 50  0001 C CNN
-F 3 "" H 8000 8750 50  0001 C CNN
-	1    8000 8750
+P 8750 8625
+F 0 "#GND2" H 8750 8675 50  0001 C CNN
+F 1 "#метка-GND" H 8800 8775 50  0001 C CNN
+F 2 "" H 8750 8625 50  0001 C CNN
+F 3 "" H 8750 8625 50  0001 C CNN
+	1    8750 8625
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7750 8600 8000 8600
-Wire Wire Line
-	8000 8600 8000 8750
+	8750 8600 8750 8625
 NoConn ~ 16500 10900
 NoConn ~ 9000 10900
 Wire Wire Line
@@ -3921,18 +3906,6 @@ DOUT10.PNP
 Wire Wire Line
 	50500 8200 49100 8200
 Wire Wire Line
-	50500 8500 49100 8500
-Wire Wire Line
-	50500 8800 49100 8800
-Wire Wire Line
-	50500 9100 49100 9100
-Wire Wire Line
-	50500 9400 49100 9400
-Wire Wire Line
-	50500 9700 49100 9700
-Wire Wire Line
-	50500 10000 49100 10000
-Wire Wire Line
 	50500 10300 49100 10300
 Wire Wire Line
 	50500 10600 49100 10600
@@ -3940,6 +3913,18 @@ Wire Wire Line
 	50500 10900 49100 10900
 Wire Wire Line
 	50500 11200 49100 11200
+Wire Wire Line
+	50500 11500 49100 11500
+Wire Wire Line
+	50500 11800 49100 11800
+Wire Wire Line
+	50500 8500 49100 8500
+Wire Wire Line
+	50500 8800 49100 8800
+Wire Wire Line
+	50500 9100 49100 9100
+Wire Wire Line
+	50500 9400 49100 9400
 $Comp
 L eo-engine:#метка-5V #5V12
 U 1 1 620153E6
@@ -3978,33 +3963,33 @@ Wire Wire Line
 	52750 2500 52000 2500
 Wire Wire Line
 	52750 2800 52000 2800
-Text Label 49250 8500 0    138  ~ 0
-DIN1
-Text Label 49250 8800 0    138  ~ 0
-DIN2
-Text Label 49250 9100 0    138  ~ 0
-DIN3
-Text Label 49250 9400 0    138  ~ 0
-DIN4
-Text Label 49250 9700 0    138  ~ 0
-DIN5
-Text Label 49250 10000 0    138  ~ 0
-DIN6
 Text Label 49250 10300 0    138  ~ 0
-DIN7
+DIN1
 Text Label 49250 10600 0    138  ~ 0
-DIN8
+DIN2
 Text Label 49250 10900 0    138  ~ 0
+DIN3
+Text Label 49250 11200 0    138  ~ 0
+DIN4
+Text Label 49250 11500 0    138  ~ 0
+DIN5
+Text Label 49250 11800 0    138  ~ 0
+DIN6
+Text Label 49250 8500 0    138  ~ 0
+DIN7
+Text Label 49250 8800 0    138  ~ 0
+DIN8
+Text Label 49250 9100 0    138  ~ 0
 DIN9
 Wire Wire Line
-	50500 11500 49100 11500
+	50500 9700 49100 9700
 Wire Wire Line
-	50500 11800 49100 11800
-Text Label 49250 11200 0    138  ~ 0
+	50500 10000 49100 10000
+Text Label 49250 9400 0    138  ~ 0
 DIN10
-Text Label 49250 11500 0    138  ~ 0
+Text Label 49250 9700 0    138  ~ 0
 DIN11
-Text Label 49250 11800 0    138  ~ 0
+Text Label 49250 10000 0    138  ~ 0
 DIN12
 Wire Wire Line
 	53400 8500 52000 8500
@@ -4259,18 +4244,6 @@ DOUT10.PNP
 Wire Wire Line
 	59500 8200 60900 8200
 Wire Wire Line
-	59500 8500 60900 8500
-Wire Wire Line
-	59500 8800 60900 8800
-Wire Wire Line
-	59500 9100 60900 9100
-Wire Wire Line
-	59500 9400 60900 9400
-Wire Wire Line
-	59500 9700 60900 9700
-Wire Wire Line
-	59500 10000 60900 10000
-Wire Wire Line
 	59500 10300 60900 10300
 Wire Wire Line
 	59500 10600 60900 10600
@@ -4278,42 +4251,95 @@ Wire Wire Line
 	59500 10900 60900 10900
 Wire Wire Line
 	59500 11200 60900 11200
-Text Label 60750 8500 2    138  ~ 0
-DIN1
-Text Label 60750 8800 2    138  ~ 0
-DIN2
-Text Label 60750 9100 2    138  ~ 0
-DIN3
-Text Label 60750 9400 2    138  ~ 0
-DIN4
-Text Label 60750 9700 2    138  ~ 0
-DIN5
-Text Label 60750 10000 2    138  ~ 0
-DIN6
-Text Label 60750 10300 2    138  ~ 0
-DIN7
-Text Label 60750 10600 2    138  ~ 0
-DIN8
-Text Label 60750 10900 2    138  ~ 0
-DIN9
 Wire Wire Line
 	59500 11500 60900 11500
 Wire Wire Line
 	59500 11800 60900 11800
+Wire Wire Line
+	59500 8500 60900 8500
+Wire Wire Line
+	59500 8800 60900 8800
+Wire Wire Line
+	59500 9100 60900 9100
+Wire Wire Line
+	59500 9400 60900 9400
+Text Label 60750 10300 2    138  ~ 0
+DIN1
+Text Label 60750 10600 2    138  ~ 0
+DIN2
+Text Label 60750 10900 2    138  ~ 0
+DIN3
 Text Label 60750 11200 2    138  ~ 0
-DIN10
+DIN4
 Text Label 60750 11500 2    138  ~ 0
-DIN11
+DIN5
 Text Label 60750 11800 2    138  ~ 0
+DIN6
+Text Label 60750 8500 2    138  ~ 0
+DIN7
+Text Label 60750 8800 2    138  ~ 0
+DIN8
+Text Label 60750 9100 2    138  ~ 0
+DIN9
+Wire Wire Line
+	59500 9700 60900 9700
+Wire Wire Line
+	59500 10000 60900 10000
+Text Label 60750 9400 2    138  ~ 0
+DIN10
+Text Label 60750 9700 2    138  ~ 0
+DIN11
+Text Label 60750 10000 2    138  ~ 0
 DIN12
+$Comp
+L eo-engine:Вилка*PLD*8контактов*2ряда*вертикальная*AVR+UART XP2
+U 1 1 61ACE107
+P 6250 8000
+F 0 "XP2" H 7125 8275 138 0000 L CNN
+F 1 "Вилка*PLD*8контактов*2ряда*вертикальная*AVR+UART" H 6250 8500 50  0001 C CNN
+F 2 "N_X:Вилка_PLD8_вертикальная_AB" H 6250 8700 50  0001 C CNN
+F 3 "" H 6250 8000 50  0001 C CNN
+F 4 "PLD8" H 6750 6825 138 0000 L CNN "INFO"
+F 5 "https://www.chipdip.ru/product/pld-8-ds1021-2x4" H 6250 8600 50  0001 C CNN "LINK"
+	1    6250 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 8600 8750 8600
+Text Label 10000 13900 2    138  ~ 0
+RX
+Wire Wire Line
+	9000 13900 10150 13900
+Entry Wire Line
+	10150 13900 10250 14000
+Text Label 10000 14200 2    138  ~ 0
+TX
+Wire Wire Line
+	9000 14200 10150 14200
+Entry Wire Line
+	10250 14100 10150 14200
+Text Label 4000 8900 0    138  ~ 0
+RX
+Text Label 10000 9250 2    138  ~ 0
+TX
+Wire Wire Line
+	3850 8900 6250 8900
+Entry Wire Line
+	3750 9000 3850 8900
+Entry Wire Line
+	10250 9350 10150 9250
+Wire Wire Line
+	7750 8900 8250 8900
+Wire Wire Line
+	8250 8900 8250 9250
+Wire Wire Line
+	8250 9250 10150 9250
 Wire Bus Line
 	29250 1000 29250 21000
 Wire Bus Line
 	36250 1000 36250 21000
 Wire Bus Line
 	17750 8000 17750 20000
-Wire Bus Line
-	10250 8000 10250 20000
 Wire Bus Line
 	18750 9500 18750 20000
 Wire Bus Line
@@ -4326,4 +4352,19 @@ Wire Bus Line
 	3750 8000 3750 20000
 Wire Bus Line
 	11250 8000 11250 20000
+Wire Bus Line
+	10250 8000 10250 20000
+$Comp
+L eo-engine:Розетка*ETH+трансформатор*8p8c XS2
+U 1 1 61F755EC
+P 5000 2500
+F 0 "XS2" H 5625 2800 138 0000 R CNN
+F 1 "Розетка*ETH+трансформатор*8p8c" H 5000 3000 50  0001 C CNN
+F 2 "N_X:Розетка_ETH_KLS12-TL002" H 5000 3200 50  0001 C CNN
+F 3 "" H 5000 2500 50  0001 C CNN
+F 4 "RJ45" H 6425 -1075 138 0000 R CNN "INFO"
+F 5 "https://www.chipdip.ru/product/sk02-111015nl" H 5000 3100 50  0001 C CNN "LINK"
+	1    5000 2500
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
