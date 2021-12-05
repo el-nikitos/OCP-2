@@ -27,8 +27,6 @@ F 6 "https://www.terraelectronica.ru/product/1908354" H 14900 10350 50  0001 C C
 	1    14750 10000
 	1    0    0    -1  
 $EndComp
-Text Notes 11700 6800 0    138  ~ 0
-10 входов\n10 выходов\nETH
 $Comp
 L eo-engine:МК*ATmega168*TQFP32 DD1
 U 1 1 61926053
@@ -2879,8 +2877,6 @@ Wire Wire Line
 	45500 1500 45000 1500
 Wire Wire Line
 	45000 1500 45000 1750
-Wire Wire Line
-	46100 1500 46750 1500
 $Comp
 L eo-engine:Конденсатор*0,1мкФ*25В*0603 C13
 U 1 1 6227F7DD
@@ -2950,8 +2946,6 @@ Wire Wire Line
 	45500 3000 45000 3000
 Wire Wire Line
 	45000 3000 45000 3250
-Wire Wire Line
-	46100 3000 46750 3000
 $Comp
 L eo-engine:Конденсатор*0,1мкФ*25В*0603 C14
 U 1 1 62395248
@@ -3021,8 +3015,6 @@ Wire Wire Line
 	45500 4500 45000 4500
 Wire Wire Line
 	45000 4500 45000 4750
-Wire Wire Line
-	46100 4500 46750 4500
 $Comp
 L eo-engine:Конденсатор*0,1мкФ*25В*0603 C15
 U 1 1 623B9AF6
@@ -3092,8 +3084,6 @@ Wire Wire Line
 	45500 6000 45000 6000
 Wire Wire Line
 	45000 6000 45000 6250
-Wire Wire Line
-	46100 6000 46750 6000
 $Comp
 L eo-engine:Конденсатор*0,1мкФ*25В*0603 C16
 U 1 1 623DEC77
@@ -3163,8 +3153,6 @@ Wire Wire Line
 	45500 7500 45000 7500
 Wire Wire Line
 	45000 7500 45000 7750
-Wire Wire Line
-	46100 7500 46750 7500
 $Comp
 L eo-engine:Конденсатор*0,1мкФ*25В*0603 C17
 U 1 1 623DECB1
@@ -3234,8 +3222,6 @@ Wire Wire Line
 	45500 9000 45000 9000
 Wire Wire Line
 	45000 9000 45000 9250
-Wire Wire Line
-	46100 9000 46750 9000
 $Comp
 L eo-engine:Конденсатор*0,1мкФ*25В*0603 C18
 U 1 1 6240B433
@@ -3305,8 +3291,6 @@ Wire Wire Line
 	45500 10500 45000 10500
 Wire Wire Line
 	45000 10500 45000 10750
-Wire Wire Line
-	46100 10500 46750 10500
 $Comp
 L eo-engine:Конденсатор*0,1мкФ*25В*0603 C19
 U 1 1 6240B46D
@@ -3376,8 +3360,6 @@ Wire Wire Line
 	45500 12000 45000 12000
 Wire Wire Line
 	45000 12000 45000 12250
-Wire Wire Line
-	46100 12000 46750 12000
 $Comp
 L eo-engine:Конденсатор*0,1мкФ*25В*0603 C20
 U 1 1 6240B4A7
@@ -3447,8 +3429,6 @@ Wire Wire Line
 	45500 13500 45000 13500
 Wire Wire Line
 	45000 13500 45000 13750
-Wire Wire Line
-	46100 13500 46750 13500
 $Comp
 L eo-engine:Конденсатор*0,1мкФ*25В*0603 C21
 U 1 1 6240B4E1
@@ -3518,8 +3498,6 @@ Wire Wire Line
 	45500 15000 45000 15000
 Wire Wire Line
 	45000 15000 45000 15250
-Wire Wire Line
-	46100 15000 46750 15000
 $Comp
 L eo-engine:Конденсатор*0,1мкФ*25В*0603 C22
 U 1 1 6240B51B
@@ -3589,8 +3567,6 @@ Wire Wire Line
 	45500 16500 45000 16500
 Wire Wire Line
 	45000 16500 45000 16750
-Wire Wire Line
-	46100 16500 46750 16500
 $Comp
 L eo-engine:Конденсатор*0,1мкФ*25В*0603 C23
 U 1 1 62449567
@@ -3660,8 +3636,6 @@ Wire Wire Line
 	45500 18000 45000 18000
 Wire Wire Line
 	45000 18000 45000 18250
-Wire Wire Line
-	46100 18000 46750 18000
 $Comp
 L eo-engine:Конденсатор*0,1мкФ*25В*0603 C24
 U 1 1 624495A1
@@ -3693,555 +3667,65 @@ DIN12
 $Comp
 L eo-engine:ico*отверстие*М3 X1
 U 1 1 61A064CA
-P 17750 2000
-F 0 "X1" H 17675 2125 50  0001 C CNN
-F 1 "ico*отверстие*М3" H 17725 1875 50  0001 C CNN
-F 2 "N_X:Отверстие_М3" H 17675 2225 50  0001 C CNN
-F 3 "" H 17750 2000 50  0001 C CNN
-	1    17750 2000
+P 18000 2000
+F 0 "X1" H 17925 2125 50  0001 C CNN
+F 1 "ico*отверстие*М3" H 17975 1875 50  0001 C CNN
+F 2 "N_X:Отверстие_М3" H 17925 2225 50  0001 C CNN
+F 3 "" H 18000 2000 50  0001 C CNN
+	1    18000 2000
 	1    0    0    -1  
 $EndComp
 $Comp
 L eo-engine:ico*отверстие*М3 X2
 U 1 1 61A0A2A3
-P 17750 2500
-F 0 "X2" H 17675 2625 50  0001 C CNN
-F 1 "ico*отверстие*М3" H 17725 2375 50  0001 C CNN
-F 2 "N_X:Отверстие_М3" H 17675 2725 50  0001 C CNN
-F 3 "" H 17750 2500 50  0001 C CNN
-	1    17750 2500
+P 18000 2500
+F 0 "X2" H 17925 2625 50  0001 C CNN
+F 1 "ico*отверстие*М3" H 17975 2375 50  0001 C CNN
+F 2 "N_X:Отверстие_М3" H 17925 2725 50  0001 C CNN
+F 3 "" H 18000 2500 50  0001 C CNN
+	1    18000 2500
 	1    0    0    -1  
 $EndComp
-$Comp
-L eo-engine:Вилка*DIN41612R*64контакта*2ряда*угловая XP3
-U 1 1 61A792DC
-P 50500 2500
-F 0 "XP3" H 51250 2800 138 0000 L CNN
-F 1 "Вилка*DIN41612R*64контакта*2ряда*угловая" H 50500 3000 50  0001 C CNN
-F 2 "MOTOR_X:Вилка_СНП306-64ВП21-24-1" H 50500 3200 50  0001 C CNN
-F 3 "" H 52000 2500 50  0001 C CNN
-F 4 "DIN41612R" H 50700 -7100 138 0000 L CNN "INFO"
-F 5 "https://www.chipdip.ru/product/din41612r-ds1118-64m-r23" H 50500 3100 50  0001 C CNN "LINK"
-	1    50500 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L eo-engine:Розетка*DIN41612R*64контакта*2ряда*угловая XS1
-U 1 1 61AA1FC2
-P 58000 2500
-F 0 "XS1" H 58250 2800 138 0000 L CNN
-F 1 "Розетка*DIN41612R*64контакта*2ряда*угловая" H 58000 3000 50  0001 C CNN
-F 2 "MOTOR_X:Розетка_СНП306-64РП21_угловая" H 58000 3200 50  0001 C CNN
-F 3 "" H 58000 2500 50  0001 C CNN
-F 4 "DIN41612R" H 58250 -7100 138 0000 L CNN "INFO"
-F 5 "https://www.chipdip.ru/product/din41612r-ds1118-64f-r23" H 58000 3100 50  0001 C CNN "LINK"
-	1    58000 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L eo-engine:#метка-5V #5V11
-U 1 1 61A3B05E
-P 49750 2500
-F 0 "#5V11" H 49750 2450 50  0001 C CNN
-F 1 "#метка-5V" H 49700 2350 50  0001 C CNN
-F 2 "" H 49750 2500 50  0001 C CNN
-F 3 "" H 49750 2500 50  0001 C CNN
-	1    49750 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	49750 2500 49750 2800
-Connection ~ 49750 2500
-$Comp
-L eo-engine:#метка-GND #GND28
-U 1 1 61ACCBDC
-P 49750 3100
-F 0 "#GND28" H 49750 3150 50  0001 C CNN
-F 1 "#метка-GND" H 49800 3250 50  0001 C CNN
-F 2 "" H 49750 3100 50  0001 C CNN
-F 3 "" H 49750 3100 50  0001 C CNN
-	1    49750 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	49750 3100 50250 3100
-Wire Wire Line
-	50500 3400 50250 3400
-Wire Wire Line
-	50250 3400 50250 3100
-Connection ~ 50250 3100
-Wire Wire Line
-	50250 3100 50500 3100
-Wire Wire Line
-	49750 2500 50500 2500
-Wire Wire Line
-	49750 2800 50500 2800
-Text Label 49250 5500 0    138  ~ 0
-DOUT1.PNP
-Text Label 53250 5500 2    138  ~ 0
+Text Label 52350 3100 2    138  ~ 0
 DOUT1.NPN
 Wire Wire Line
-	50500 5500 49100 5500
-Wire Wire Line
-	52000 5500 53400 5500
-Text Label 49250 5800 0    138  ~ 0
+	51100 3100 52500 3100
+Text Label 51250 4250 0    138  ~ 0
 DOUT2.PNP
-Wire Wire Line
-	50500 5800 49100 5800
-Text Label 53250 5800 2    138  ~ 0
+Text Label 51250 4850 0    138  ~ 0
 DOUT2.NPN
-Wire Wire Line
-	52000 5800 53400 5800
-Text Label 49250 6100 0    138  ~ 0
+Text Label 51250 6000 0    138  ~ 0
 DOUT3.PNP
-Wire Wire Line
-	50500 6100 49100 6100
-Text Label 49250 6400 0    138  ~ 0
+Text Label 51250 7750 0    138  ~ 0
 DOUT4.PNP
-Wire Wire Line
-	50500 6400 49100 6400
-Text Label 53250 6100 2    138  ~ 0
+Text Label 51250 6600 0    138  ~ 0
 DOUT3.NPN
-Wire Wire Line
-	52000 6100 53400 6100
-Text Label 49250 6700 0    138  ~ 0
+Text Label 51250 9500 0    138  ~ 0
 DOUT5.PNP
-Wire Wire Line
-	50500 6700 49100 6700
-Text Label 49250 7000 0    138  ~ 0
+Text Label 51250 11250 0    138  ~ 0
 DOUT6.PNP
-Wire Wire Line
-	50500 7000 49100 7000
-Text Label 49250 7300 0    138  ~ 0
+Text Label 51250 13000 0    138  ~ 0
 DOUT7.PNP
-Wire Wire Line
-	50500 7300 49100 7300
-Text Label 49250 7600 0    138  ~ 0
+Text Label 51250 14750 0    138  ~ 0
 DOUT8.PNP
-Wire Wire Line
-	50500 7600 49100 7600
-Text Label 53250 6400 2    138  ~ 0
+Text Label 51250 8350 0    138  ~ 0
 DOUT4.NPN
-Wire Wire Line
-	52000 6400 53400 6400
-Text Label 53250 6700 2    138  ~ 0
+Text Label 51300 10100 0    138  ~ 0
 DOUT5.NPN
-Wire Wire Line
-	52000 6700 53400 6700
-Text Label 53250 7000 2    138  ~ 0
+Text Label 51250 11850 0    138  ~ 0
 DOUT6.NPN
-Wire Wire Line
-	52000 7000 53400 7000
-Text Label 53250 7300 2    138  ~ 0
+Text Label 51250 13600 0    138  ~ 0
 DOUT7.NPN
-Wire Wire Line
-	52000 7300 53400 7300
-Text Label 53250 7600 2    138  ~ 0
+Text Label 51250 15350 0    138  ~ 0
 DOUT8.NPN
-Wire Wire Line
-	52000 7600 53400 7600
-Text Label 53250 7900 2    138  ~ 0
+Text Label 51250 17100 0    138  ~ 0
 DOUT9.NPN
-Wire Wire Line
-	52000 7900 53400 7900
-Text Label 53250 8200 2    138  ~ 0
+Text Label 51250 18850 0    138  ~ 0
 DOUT10.NPN
-Wire Wire Line
-	52000 8200 53400 8200
-Text Label 49250 7900 0    138  ~ 0
+Text Label 51250 16500 0    138  ~ 0
 DOUT9.PNP
-Wire Wire Line
-	50500 7900 49100 7900
-Text Label 49250 8200 0    138  ~ 0
+Text Label 51250 18250 0    138  ~ 0
 DOUT10.PNP
-Wire Wire Line
-	50500 8200 49100 8200
-Wire Wire Line
-	50500 10300 49100 10300
-Wire Wire Line
-	50500 10600 49100 10600
-Wire Wire Line
-	50500 10900 49100 10900
-Wire Wire Line
-	50500 11200 49100 11200
-Wire Wire Line
-	50500 11500 49100 11500
-Wire Wire Line
-	50500 11800 49100 11800
-Wire Wire Line
-	50500 8500 49100 8500
-Wire Wire Line
-	50500 8800 49100 8800
-Wire Wire Line
-	50500 9100 49100 9100
-Wire Wire Line
-	50500 9400 49100 9400
-$Comp
-L eo-engine:#метка-5V #5V12
-U 1 1 620153E6
-P 52750 2500
-F 0 "#5V12" H 52750 2450 50  0001 C CNN
-F 1 "#метка-5V" H 52700 2350 50  0001 C CNN
-F 2 "" H 52750 2500 50  0001 C CNN
-F 3 "" H 52750 2500 50  0001 C CNN
-	1    52750 2500
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	52750 2500 52750 2800
-Connection ~ 52750 2500
-$Comp
-L eo-engine:#метка-GND #GND29
-U 1 1 620153FE
-P 52750 3100
-F 0 "#GND29" H 52750 3150 50  0001 C CNN
-F 1 "#метка-GND" H 52800 3250 50  0001 C CNN
-F 2 "" H 52750 3100 50  0001 C CNN
-F 3 "" H 52750 3100 50  0001 C CNN
-	1    52750 3100
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	52750 3100 52250 3100
-Wire Wire Line
-	52000 3400 52250 3400
-Wire Wire Line
-	52250 3400 52250 3100
-Connection ~ 52250 3100
-Wire Wire Line
-	52250 3100 52000 3100
-Wire Wire Line
-	52750 2500 52000 2500
-Wire Wire Line
-	52750 2800 52000 2800
-Text Label 49250 10300 0    138  ~ 0
-DIN1
-Text Label 49250 10600 0    138  ~ 0
-DIN2
-Text Label 49250 10900 0    138  ~ 0
-DIN3
-Text Label 49250 11200 0    138  ~ 0
-DIN4
-Text Label 49250 11500 0    138  ~ 0
-DIN5
-Text Label 49250 11800 0    138  ~ 0
-DIN6
-Text Label 49250 8500 0    138  ~ 0
-DIN7
-Text Label 49250 8800 0    138  ~ 0
-DIN8
-Text Label 49250 9100 0    138  ~ 0
-DIN9
-Wire Wire Line
-	50500 9700 49100 9700
-Wire Wire Line
-	50500 10000 49100 10000
-Text Label 49250 9400 0    138  ~ 0
-DIN10
-Text Label 49250 9700 0    138  ~ 0
-DIN11
-Text Label 49250 10000 0    138  ~ 0
-DIN12
-Wire Wire Line
-	53400 8500 52000 8500
-Wire Wire Line
-	53400 8800 52000 8800
-Wire Wire Line
-	53400 9100 52000 9100
-Wire Wire Line
-	53400 9400 52000 9400
-Wire Wire Line
-	53400 9700 52000 9700
-Wire Wire Line
-	53400 10000 52000 10000
-Wire Wire Line
-	53400 10300 52000 10300
-Wire Wire Line
-	53400 10600 52000 10600
-Wire Wire Line
-	53400 10900 52000 10900
-Wire Wire Line
-	53400 11200 52000 11200
-Wire Wire Line
-	53400 11500 52000 11500
-Wire Wire Line
-	53400 11800 52000 11800
-Text Label 53250 8500 2    138  ~ 0
-RESERVE1
-Text Label 53250 8800 2    138  ~ 0
-RESERVE2
-Text Label 53250 9100 2    138  ~ 0
-RESERVE3
-Text Label 53250 9400 2    138  ~ 0
-RESERVE4
-Text Label 53250 9700 2    138  ~ 0
-RESERVE5
-Text Label 53250 10000 2    138  ~ 0
-RESERVE6
-Text Label 53250 10300 2    138  ~ 0
-RESERVE7
-Text Label 53250 10600 2    138  ~ 0
-RESERVE8
-Text Label 53250 10900 2    138  ~ 0
-RESERVE9
-Text Label 53250 11200 2    138  ~ 0
-RESERVE10
-Text Label 53250 11500 2    138  ~ 0
-RESERVE11
-Text Label 53250 11800 2    138  ~ 0
-RESERVE12
-Text Label 56750 5500 0    138  ~ 0
-DOUT1.NPN
-Wire Wire Line
-	58000 5500 56600 5500
-Text Label 56750 5800 0    138  ~ 0
-DOUT2.NPN
-Wire Wire Line
-	58000 5800 56600 5800
-Text Label 56750 6100 0    138  ~ 0
-DOUT3.NPN
-Wire Wire Line
-	58000 6100 56600 6100
-Text Label 56750 6400 0    138  ~ 0
-DOUT4.NPN
-Wire Wire Line
-	58000 6400 56600 6400
-Text Label 56750 6700 0    138  ~ 0
-DOUT5.NPN
-Wire Wire Line
-	58000 6700 56600 6700
-Text Label 56750 7000 0    138  ~ 0
-DOUT6.NPN
-Wire Wire Line
-	58000 7000 56600 7000
-Text Label 56750 7300 0    138  ~ 0
-DOUT7.NPN
-Wire Wire Line
-	58000 7300 56600 7300
-Text Label 56750 7600 0    138  ~ 0
-DOUT8.NPN
-Wire Wire Line
-	58000 7600 56600 7600
-Text Label 56750 7900 0    138  ~ 0
-DOUT9.NPN
-Wire Wire Line
-	58000 7900 56600 7900
-Text Label 56750 8200 0    138  ~ 0
-DOUT10.NPN
-Wire Wire Line
-	58000 8200 56600 8200
-$Comp
-L eo-engine:#метка-5V #5V13
-U 1 1 62140306
-P 57250 2500
-F 0 "#5V13" H 57250 2450 50  0001 C CNN
-F 1 "#метка-5V" H 57200 2350 50  0001 C CNN
-F 2 "" H 57250 2500 50  0001 C CNN
-F 3 "" H 57250 2500 50  0001 C CNN
-	1    57250 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	57250 2500 57250 2800
-Connection ~ 57250 2500
-$Comp
-L eo-engine:#метка-GND #GND30
-U 1 1 62140312
-P 57250 3100
-F 0 "#GND30" H 57250 3150 50  0001 C CNN
-F 1 "#метка-GND" H 57300 3250 50  0001 C CNN
-F 2 "" H 57250 3100 50  0001 C CNN
-F 3 "" H 57250 3100 50  0001 C CNN
-	1    57250 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	57250 3100 57750 3100
-Wire Wire Line
-	58000 3400 57750 3400
-Wire Wire Line
-	57750 3400 57750 3100
-Connection ~ 57750 3100
-Wire Wire Line
-	57750 3100 58000 3100
-Wire Wire Line
-	57250 2500 58000 2500
-Wire Wire Line
-	57250 2800 58000 2800
-Wire Wire Line
-	56600 8500 58000 8500
-Wire Wire Line
-	56600 8800 58000 8800
-Wire Wire Line
-	56600 9100 58000 9100
-Wire Wire Line
-	56600 9400 58000 9400
-Wire Wire Line
-	56600 9700 58000 9700
-Wire Wire Line
-	56600 10000 58000 10000
-Wire Wire Line
-	56600 10300 58000 10300
-Wire Wire Line
-	56600 10600 58000 10600
-Wire Wire Line
-	56600 10900 58000 10900
-Wire Wire Line
-	56600 11200 58000 11200
-Wire Wire Line
-	56600 11500 58000 11500
-Wire Wire Line
-	56600 11800 58000 11800
-Text Label 56750 8500 0    138  ~ 0
-RESERVE1
-Text Label 56750 8800 0    138  ~ 0
-RESERVE2
-Text Label 56750 9100 0    138  ~ 0
-RESERVE3
-Text Label 56750 9400 0    138  ~ 0
-RESERVE4
-Text Label 56750 9700 0    138  ~ 0
-RESERVE5
-Text Label 56750 10000 0    138  ~ 0
-RESERVE6
-Text Label 56750 10300 0    138  ~ 0
-RESERVE7
-Text Label 56750 10600 0    138  ~ 0
-RESERVE8
-Text Label 56750 10900 0    138  ~ 0
-RESERVE9
-Text Label 56750 11200 0    138  ~ 0
-RESERVE10
-Text Label 56750 11500 0    138  ~ 0
-RESERVE11
-Text Label 56750 11800 0    138  ~ 0
-RESERVE12
-$Comp
-L eo-engine:#метка-5V #5V14
-U 1 1 62186296
-P 60250 2500
-F 0 "#5V14" H 60250 2450 50  0001 C CNN
-F 1 "#метка-5V" H 60200 2350 50  0001 C CNN
-F 2 "" H 60250 2500 50  0001 C CNN
-F 3 "" H 60250 2500 50  0001 C CNN
-	1    60250 2500
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	60250 2500 60250 2800
-Connection ~ 60250 2500
-$Comp
-L eo-engine:#метка-GND #GND31
-U 1 1 621862AE
-P 60250 3100
-F 0 "#GND31" H 60250 3150 50  0001 C CNN
-F 1 "#метка-GND" H 60300 3250 50  0001 C CNN
-F 2 "" H 60250 3100 50  0001 C CNN
-F 3 "" H 60250 3100 50  0001 C CNN
-	1    60250 3100
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	60250 3100 59750 3100
-Wire Wire Line
-	59500 3400 59750 3400
-Wire Wire Line
-	59750 3400 59750 3100
-Connection ~ 59750 3100
-Wire Wire Line
-	59750 3100 59500 3100
-Wire Wire Line
-	60250 2500 59500 2500
-Wire Wire Line
-	60250 2800 59500 2800
-Text Label 60750 5500 2    138  ~ 0
-DOUT1.PNP
-Wire Wire Line
-	59500 5500 60900 5500
-Text Label 60750 5800 2    138  ~ 0
-DOUT2.PNP
-Wire Wire Line
-	59500 5800 60900 5800
-Text Label 60750 6100 2    138  ~ 0
-DOUT3.PNP
-Wire Wire Line
-	59500 6100 60900 6100
-Text Label 60750 6400 2    138  ~ 0
-DOUT4.PNP
-Wire Wire Line
-	59500 6400 60900 6400
-Text Label 60750 6700 2    138  ~ 0
-DOUT5.PNP
-Wire Wire Line
-	59500 6700 60900 6700
-Text Label 60750 7000 2    138  ~ 0
-DOUT6.PNP
-Wire Wire Line
-	59500 7000 60900 7000
-Text Label 60750 7300 2    138  ~ 0
-DOUT7.PNP
-Wire Wire Line
-	59500 7300 60900 7300
-Text Label 60750 7600 2    138  ~ 0
-DOUT8.PNP
-Wire Wire Line
-	59500 7600 60900 7600
-Text Label 60750 7900 2    138  ~ 0
-DOUT9.PNP
-Wire Wire Line
-	59500 7900 60900 7900
-Text Label 60750 8200 2    138  ~ 0
-DOUT10.PNP
-Wire Wire Line
-	59500 8200 60900 8200
-Wire Wire Line
-	59500 10300 60900 10300
-Wire Wire Line
-	59500 10600 60900 10600
-Wire Wire Line
-	59500 10900 60900 10900
-Wire Wire Line
-	59500 11200 60900 11200
-Wire Wire Line
-	59500 11500 60900 11500
-Wire Wire Line
-	59500 11800 60900 11800
-Wire Wire Line
-	59500 8500 60900 8500
-Wire Wire Line
-	59500 8800 60900 8800
-Wire Wire Line
-	59500 9100 60900 9100
-Wire Wire Line
-	59500 9400 60900 9400
-Text Label 60750 10300 2    138  ~ 0
-DIN1
-Text Label 60750 10600 2    138  ~ 0
-DIN2
-Text Label 60750 10900 2    138  ~ 0
-DIN3
-Text Label 60750 11200 2    138  ~ 0
-DIN4
-Text Label 60750 11500 2    138  ~ 0
-DIN5
-Text Label 60750 11800 2    138  ~ 0
-DIN6
-Text Label 60750 8500 2    138  ~ 0
-DIN7
-Text Label 60750 8800 2    138  ~ 0
-DIN8
-Text Label 60750 9100 2    138  ~ 0
-DIN9
-Wire Wire Line
-	59500 9700 60900 9700
-Wire Wire Line
-	59500 10000 60900 10000
-Text Label 60750 9400 2    138  ~ 0
-DIN10
-Text Label 60750 9700 2    138  ~ 0
-DIN11
-Text Label 60750 10000 2    138  ~ 0
-DIN12
 $Comp
 L eo-engine:Вилка*PLD*8контактов*2ряда*вертикальная*AVR+UART XP2
 U 1 1 61ACE107
@@ -4460,7 +3944,6 @@ Wire Wire Line
 	25250 18250 25250 19250
 Wire Wire Line
 	25250 19250 25750 19250
-Connection ~ 25250 19250
 Wire Wire Line
 	24500 17250 24500 17500
 $Comp
@@ -4504,7 +3987,7 @@ $Comp
 L eo-engine:Резистор*49,9Ом*0603 R55
 U 1 1 6298E04A
 P 4150 10350
-F 0 "R55" V 4575 10100 138 0000 C CNN
+F 0 "R55" V 4550 10000 138 0000 C CNN
 F 1 "Резистор*49,9кОм*0603" H 4150 10950 50  0001 C CNN
 F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 4250 10850 50  0001 C CNN
 F 3 "" V 4150 10350 50  0001 C CNN
@@ -4529,7 +4012,7 @@ $Comp
 L eo-engine:Резистор*49,9Ом*0603 R56
 U 1 1 62B0C1AC
 P 4150 11350
-F 0 "R56" V 4575 11100 138 0000 C CNN
+F 0 "R56" V 4550 11000 138 0000 C CNN
 F 1 "Резистор*49,9кОм*0603" H 4150 11950 50  0001 C CNN
 F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 4250 11850 50  0001 C CNN
 F 3 "" V 4150 11350 50  0001 C CNN
@@ -4574,7 +4057,7 @@ $Comp
 L eo-engine:Резистор*49,9Ом*0603 R57
 U 1 1 62F10949
 P 4150 12850
-F 0 "R57" V 4575 12600 138 0000 C CNN
+F 0 "R57" V 4550 12500 138 0000 C CNN
 F 1 "Резистор*49,9кОм*0603" H 4150 13450 50  0001 C CNN
 F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 4250 13350 50  0001 C CNN
 F 3 "" V 4150 12850 50  0001 C CNN
@@ -4588,7 +4071,7 @@ $Comp
 L eo-engine:Резистор*49,9Ом*0603 R58
 U 1 1 62F10956
 P 4150 13850
-F 0 "R58" V 4575 13600 138 0000 C CNN
+F 0 "R58" V 4550 13500 138 0000 C CNN
 F 1 "Резистор*49,9кОм*0603" H 4150 14450 50  0001 C CNN
 F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 4250 14350 50  0001 C CNN
 F 3 "" V 4150 13850 50  0001 C CNN
@@ -4735,8 +4218,6 @@ F 4 "2,32кОм" H 23825 19025 138 0000 C CNN "INFO"
 	1    23500 19250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	24100 19250 25225 19250
 Text Label 1750 3400 0    138  ~ 0
 MID-TX
 Entry Wire Line
@@ -5095,8 +4576,6 @@ Connection ~ 1000 5200
 Wire Wire Line
 	1000 5200 1000 5800
 Wire Wire Line
-	3150 4600 1000 4600
-Wire Wire Line
 	5600 8000 8500 8000
 Wire Wire Line
 	5600 8300 8500 8300
@@ -5303,6 +4782,477 @@ Wire Wire Line
 	14750 13600 13600 13600
 Entry Wire Line
 	13500 13700 13600 13600
+$Comp
+L eo-engine:ico*отверстие*М3 X3
+U 1 1 61B6C823
+P 18500 2000
+F 0 "X3" H 18425 2125 50  0001 C CNN
+F 1 "ico*отверстие*М3" H 18475 1875 50  0001 C CNN
+F 2 "N_X:Отверстие_М3" H 18425 2225 50  0001 C CNN
+F 3 "" H 18500 2000 50  0001 C CNN
+	1    18500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L eo-engine:ico*отверстие*М3 X4
+U 1 1 61B6C839
+P 18500 2500
+F 0 "X4" H 18425 2625 50  0001 C CNN
+F 1 "ico*отверстие*М3" H 18475 2375 50  0001 C CNN
+F 2 "N_X:Отверстие_М3" H 18425 2725 50  0001 C CNN
+F 3 "" H 18500 2500 50  0001 C CNN
+	1    18500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25250 19250 24100 19250
+Connection ~ 25250 19250
+Wire Wire Line
+	1000 4600 3250 4600
+$Comp
+L eo-engine:Вилка*PLS*3контактов*1ряд*вертикальная XP4
+U 1 1 6240098D
+P 52500 2500
+F 0 "XP4" H 52700 3000 138 0000 L CNN
+F 1 "Вилка*PLS*3контактов*1ряд*вертикальная" H 52500 3000 50  0001 C CNN
+F 2 "N_X:Вилка_PLS3_вертикальная" H 52500 3200 50  0001 C CNN
+F 3 "" H 52500 2500 50  0001 C CNN
+F 4 "PLS3" H 52700 1650 138 0000 L CNN "INFO"
+	1    52500 2500
+	1    0    0    -1  
+$EndComp
+Text Label 51250 2500 0    138  ~ 0
+DOUT1.PNP
+Wire Wire Line
+	52500 2500 51100 2500
+Text Label 53550 2800 0    138  ~ 0
+DOUT1
+Entry Wire Line
+	51000 2400 51100 2500
+Entry Wire Line
+	51000 3000 51100 3100
+Wire Wire Line
+	51100 4850 52500 4850
+$Comp
+L eo-engine:Вилка*PLS*3контактов*1ряд*вертикальная XP5
+U 1 1 627A1E1D
+P 52500 4250
+F 0 "XP5" H 52700 4750 138 0000 L CNN
+F 1 "Вилка*PLS*3контактов*1ряд*вертикальная" H 52500 4750 50  0001 C CNN
+F 2 "N_X:Вилка_PLS3_вертикальная" H 52500 4950 50  0001 C CNN
+F 3 "" H 52500 4250 50  0001 C CNN
+F 4 "PLS3" H 52700 3400 138 0000 L CNN "INFO"
+	1    52500 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	52500 4250 51100 4250
+Text Label 53550 4550 0    138  ~ 0
+DOUT2
+Entry Wire Line
+	51000 4150 51100 4250
+Entry Wire Line
+	51000 4750 51100 4850
+Wire Wire Line
+	51100 6600 52500 6600
+$Comp
+L eo-engine:Вилка*PLS*3контактов*1ряд*вертикальная XP6
+U 1 1 628D8D9A
+P 52500 6000
+F 0 "XP6" H 52700 6500 138 0000 L CNN
+F 1 "Вилка*PLS*3контактов*1ряд*вертикальная" H 52500 6500 50  0001 C CNN
+F 2 "N_X:Вилка_PLS3_вертикальная" H 52500 6700 50  0001 C CNN
+F 3 "" H 52500 6000 50  0001 C CNN
+F 4 "PLS3" H 52700 5150 138 0000 L CNN "INFO"
+	1    52500 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	52500 6000 51100 6000
+Text Label 53550 6300 0    138  ~ 0
+DOUT3
+Entry Wire Line
+	51000 5900 51100 6000
+Entry Wire Line
+	51000 6500 51100 6600
+Wire Wire Line
+	51100 8350 52500 8350
+$Comp
+L eo-engine:Вилка*PLS*3контактов*1ряд*вертикальная XP7
+U 1 1 628D8DAD
+P 52500 7750
+F 0 "XP7" H 52700 8250 138 0000 L CNN
+F 1 "Вилка*PLS*3контактов*1ряд*вертикальная" H 52500 8250 50  0001 C CNN
+F 2 "N_X:Вилка_PLS3_вертикальная" H 52500 8450 50  0001 C CNN
+F 3 "" H 52500 7750 50  0001 C CNN
+F 4 "PLS3" H 52700 6900 138 0000 L CNN "INFO"
+	1    52500 7750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	52500 7750 51100 7750
+Text Label 53550 8050 0    138  ~ 0
+DOUT4
+Entry Wire Line
+	51000 7650 51100 7750
+Entry Wire Line
+	51000 8250 51100 8350
+Wire Wire Line
+	51100 10100 52500 10100
+$Comp
+L eo-engine:Вилка*PLS*3контактов*1ряд*вертикальная XP8
+U 1 1 62978B5C
+P 52500 9500
+F 0 "XP8" H 52700 10000 138 0000 L CNN
+F 1 "Вилка*PLS*3контактов*1ряд*вертикальная" H 52500 10000 50  0001 C CNN
+F 2 "N_X:Вилка_PLS3_вертикальная" H 52500 10200 50  0001 C CNN
+F 3 "" H 52500 9500 50  0001 C CNN
+F 4 "PLS3" H 52700 8650 138 0000 L CNN "INFO"
+	1    52500 9500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	52500 9500 51100 9500
+Text Label 53550 9800 0    138  ~ 0
+DOUT5
+Entry Wire Line
+	51000 9400 51100 9500
+Entry Wire Line
+	51000 10000 51100 10100
+Wire Wire Line
+	51100 11850 52500 11850
+$Comp
+L eo-engine:Вилка*PLS*3контактов*1ряд*вертикальная XP9
+U 1 1 62978B6E
+P 52500 11250
+F 0 "XP9" H 52700 11750 138 0000 L CNN
+F 1 "Вилка*PLS*3контактов*1ряд*вертикальная" H 52500 11750 50  0001 C CNN
+F 2 "N_X:Вилка_PLS3_вертикальная" H 52500 11950 50  0001 C CNN
+F 3 "" H 52500 11250 50  0001 C CNN
+F 4 "PLS3" H 52700 10400 138 0000 L CNN "INFO"
+	1    52500 11250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	52500 11250 51100 11250
+Text Label 53550 11550 0    138  ~ 0
+DOUT6
+Entry Wire Line
+	51000 11150 51100 11250
+Entry Wire Line
+	51000 11750 51100 11850
+Wire Wire Line
+	51100 13600 52500 13600
+$Comp
+L eo-engine:Вилка*PLS*3контактов*1ряд*вертикальная XP10
+U 1 1 62C0FC86
+P 52500 13000
+F 0 "XP10" H 52700 13500 138 0000 L CNN
+F 1 "Вилка*PLS*3контактов*1ряд*вертикальная" H 52500 13500 50  0001 C CNN
+F 2 "N_X:Вилка_PLS3_вертикальная" H 52500 13700 50  0001 C CNN
+F 3 "" H 52500 13000 50  0001 C CNN
+F 4 "PLS3" H 52700 12150 138 0000 L CNN "INFO"
+	1    52500 13000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	52500 13000 51100 13000
+Text Label 53550 13300 0    138  ~ 0
+DOUT7
+Entry Wire Line
+	51000 12900 51100 13000
+Entry Wire Line
+	51000 13500 51100 13600
+Wire Wire Line
+	51100 15350 52500 15350
+$Comp
+L eo-engine:Вилка*PLS*3контактов*1ряд*вертикальная XP11
+U 1 1 62C0FC98
+P 52500 14750
+F 0 "XP11" H 52700 15250 138 0000 L CNN
+F 1 "Вилка*PLS*3контактов*1ряд*вертикальная" H 52500 15250 50  0001 C CNN
+F 2 "N_X:Вилка_PLS3_вертикальная" H 52500 15450 50  0001 C CNN
+F 3 "" H 52500 14750 50  0001 C CNN
+F 4 "PLS3" H 52700 13900 138 0000 L CNN "INFO"
+	1    52500 14750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	52500 14750 51100 14750
+Text Label 53550 15050 0    138  ~ 0
+DOUT8
+Entry Wire Line
+	51000 14650 51100 14750
+Entry Wire Line
+	51000 15250 51100 15350
+Wire Wire Line
+	51100 17100 52500 17100
+$Comp
+L eo-engine:Вилка*PLS*3контактов*1ряд*вертикальная XP12
+U 1 1 62CB4331
+P 52500 16500
+F 0 "XP12" H 52700 17000 138 0000 L CNN
+F 1 "Вилка*PLS*3контактов*1ряд*вертикальная" H 52500 17000 50  0001 C CNN
+F 2 "N_X:Вилка_PLS3_вертикальная" H 52500 17200 50  0001 C CNN
+F 3 "" H 52500 16500 50  0001 C CNN
+F 4 "PLS3" H 52700 15650 138 0000 L CNN "INFO"
+	1    52500 16500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	52500 16500 51100 16500
+Text Label 53550 16800 0    138  ~ 0
+DOUT9
+Entry Wire Line
+	51000 16400 51100 16500
+Entry Wire Line
+	51000 17000 51100 17100
+Wire Wire Line
+	51100 18850 52500 18850
+$Comp
+L eo-engine:Вилка*PLS*3контактов*1ряд*вертикальная XP13
+U 1 1 62CB4343
+P 52500 18250
+F 0 "XP13" H 52700 18750 138 0000 L CNN
+F 1 "Вилка*PLS*3контактов*1ряд*вертикальная" H 52500 18750 50  0001 C CNN
+F 2 "N_X:Вилка_PLS3_вертикальная" H 52500 18950 50  0001 C CNN
+F 3 "" H 52500 18250 50  0001 C CNN
+F 4 "PLS3" H 52700 17400 138 0000 L CNN "INFO"
+	1    52500 18250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	52500 18250 51100 18250
+Text Label 53550 18550 0    138  ~ 0
+DOUT10
+Entry Wire Line
+	51000 18150 51100 18250
+Entry Wire Line
+	51000 18750 51100 18850
+$Comp
+L eo-engine:Клеммник*шаг_3,5*5контактов*1ряд*вертикальная XP14
+U 1 1 62E291D9
+P 55250 5700
+F 0 "XP14" H 55450 6250 138 0000 L CNN
+F 1 "Клеммник*шаг_3,5*5контактов*1ряд*вертикальная" H 55250 6200 50  0001 C CNN
+F 2 "N_X:Клеммник_15EDGVC-3.5-05P" H 55250 6400 50  0001 C CNN
+F 3 "" H 55250 5700 50  0001 C CNN
+F 4 "15EDGVC-3.5-05P" H 55250 4200 138 0000 L CNN "INFO"
+F 5 "https://www.terraelectronica.ru/product/1294475" H 55250 6300 50  0001 C CNN "LINK"
+	1    55250 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	54750 4550 54750 6000
+Wire Wire Line
+	54750 6000 55250 6000
+Wire Wire Line
+	53400 4550 54750 4550
+Wire Wire Line
+	53400 6300 55250 6300
+Wire Wire Line
+	54750 8050 54750 6600
+Wire Wire Line
+	54750 6600 55250 6600
+Wire Wire Line
+	53400 8050 54750 8050
+Wire Wire Line
+	55250 5700 55000 5700
+Wire Wire Line
+	55000 5700 55000 2800
+Wire Wire Line
+	53400 2800 55000 2800
+Wire Wire Line
+	55250 6900 55000 6900
+Wire Wire Line
+	55000 6900 55000 9800
+Wire Wire Line
+	53400 9800 55000 9800
+$Comp
+L eo-engine:Клеммник*шаг_3,5*5контактов*1ряд*вертикальная XP15
+U 1 1 6329CDBD
+P 55250 14450
+F 0 "XP15" H 55450 14950 138 0000 L CNN
+F 1 "Клеммник*шаг_3,5*5контактов*1ряд*вертикальная" H 55250 14950 50  0001 C CNN
+F 2 "N_X:Клеммник_15EDGVC-3.5-05P" H 55250 15150 50  0001 C CNN
+F 3 "" H 55250 14450 50  0001 C CNN
+F 4 "15EDGVC-3.5-05P" H 55250 12950 138 0000 L CNN "INFO"
+F 5 "https://www.terraelectronica.ru/product/1294475" H 55250 15050 50  0001 C CNN "LINK"
+	1    55250 14450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	54750 13300 54750 14750
+Wire Wire Line
+	54750 14750 55250 14750
+Wire Wire Line
+	53400 13300 54750 13300
+Wire Wire Line
+	53400 15050 55250 15050
+Wire Wire Line
+	54750 16800 54750 15350
+Wire Wire Line
+	54750 15350 55250 15350
+Wire Wire Line
+	53400 16800 54750 16800
+Wire Wire Line
+	55250 14450 55000 14450
+Wire Wire Line
+	55000 14450 55000 11550
+Wire Wire Line
+	55250 15650 55000 15650
+Wire Wire Line
+	55000 15650 55000 18550
+Wire Wire Line
+	53400 11550 55000 11550
+Wire Wire Line
+	53400 18550 55000 18550
+$Comp
+L eo-engine:Клеммник*шаг_3,5*5контактов*1ряд*вертикальная XP16
+U 1 1 634E76CA
+P 47750 1500
+F 0 "XP16" H 47950 2050 138 0000 L CNN
+F 1 "Клеммник*шаг_3,5*5контактов*1ряд*вертикальная" H 47750 2000 50  0001 C CNN
+F 2 "N_X:Клеммник_15EDGVC-3.5-05P" H 47750 2200 50  0001 C CNN
+F 3 "" H 47750 1500 50  0001 C CNN
+F 4 "15EDGVC-3.5-05P" H 47750 0   138 0000 L CNN "INFO"
+F 5 "https://www.terraelectronica.ru/product/1294475" H 47750 2100 50  0001 C CNN "LINK"
+	1    47750 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	46100 1500 47750 1500
+Wire Wire Line
+	47000 3000 47000 1800
+Wire Wire Line
+	47000 1800 47750 1800
+Wire Wire Line
+	46100 3000 47000 3000
+Wire Wire Line
+	47250 4500 47250 2100
+Wire Wire Line
+	47250 2100 47750 2100
+Wire Wire Line
+	46100 4500 47250 4500
+Wire Wire Line
+	47500 6000 47500 2400
+Wire Wire Line
+	47500 2400 47750 2400
+Wire Wire Line
+	46100 6000 47500 6000
+NoConn ~ 47750 2700
+$Comp
+L eo-engine:Клеммник*шаг_3,5*5контактов*1ряд*вертикальная XP17
+U 1 1 638EDB87
+P 47750 7500
+F 0 "XP17" H 47950 8050 138 0000 L CNN
+F 1 "Клеммник*шаг_3,5*5контактов*1ряд*вертикальная" H 47750 8000 50  0001 C CNN
+F 2 "N_X:Клеммник_15EDGVC-3.5-05P" H 47750 8200 50  0001 C CNN
+F 3 "" H 47750 7500 50  0001 C CNN
+F 4 "15EDGVC-3.5-05P" H 47750 6000 138 0000 L CNN "INFO"
+F 5 "https://www.terraelectronica.ru/product/1294475" H 47750 8100 50  0001 C CNN "LINK"
+	1    47750 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	46100 7500 47750 7500
+Wire Wire Line
+	47000 9000 47000 7800
+Wire Wire Line
+	47000 7800 47750 7800
+Wire Wire Line
+	46100 9000 47000 9000
+Wire Wire Line
+	47250 10500 47250 8100
+Wire Wire Line
+	47250 8100 47750 8100
+Wire Wire Line
+	46100 10500 47250 10500
+Wire Wire Line
+	47500 12000 47500 8400
+Wire Wire Line
+	47500 8400 47750 8400
+Wire Wire Line
+	46100 12000 47500 12000
+NoConn ~ 47750 8700
+$Comp
+L eo-engine:Клеммник*шаг_3,5*5контактов*1ряд*вертикальная XP18
+U 1 1 6397FD5C
+P 47750 13500
+F 0 "XP18" H 47950 14050 138 0000 L CNN
+F 1 "Клеммник*шаг_3,5*5контактов*1ряд*вертикальная" H 47750 14000 50  0001 C CNN
+F 2 "N_X:Клеммник_15EDGVC-3.5-05P" H 47750 14200 50  0001 C CNN
+F 3 "" H 47750 13500 50  0001 C CNN
+F 4 "15EDGVC-3.5-05P" H 47750 12000 138 0000 L CNN "INFO"
+F 5 "https://www.terraelectronica.ru/product/1294475" H 47750 14100 50  0001 C CNN "LINK"
+	1    47750 13500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	46100 13500 47750 13500
+Wire Wire Line
+	47000 15000 47000 13800
+Wire Wire Line
+	47000 13800 47750 13800
+Wire Wire Line
+	46100 15000 47000 15000
+Wire Wire Line
+	47250 16500 47250 14100
+Wire Wire Line
+	47250 14100 47750 14100
+Wire Wire Line
+	46100 16500 47250 16500
+Wire Wire Line
+	47500 18000 47500 14400
+Wire Wire Line
+	47500 14400 47750 14400
+Wire Wire Line
+	46100 18000 47500 18000
+NoConn ~ 47750 14700
+$Comp
+L eo-engine:Клеммник*шаг_3,5*3контактов*1ряд*вертикальная XP19
+U 1 1 63A1FC37
+P 25000 2500
+F 0 "XP19" H 25200 3050 138 0000 L CNN
+F 1 "Клеммник*шаг_3,5*3контактов*1ряд*вертикальная" H 25000 3000 50  0001 C CNN
+F 2 "N_X:Клеммник_15EDGVC-3.5-03P" H 25000 3200 50  0001 C CNN
+F 3 "" H 25000 2500 50  0001 C CNN
+F 4 "15EDGVC-3.5-03P" H 25000 1500 138 0000 L CNN "INFO"
+F 5 "https://www.terraelectronica.ru/product/1027586" H 25000 3100 50  0001 C CNN "LINK"
+	1    25000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L eo-engine:#метка-5V #5V13
+U 1 1 63A22361
+P 24500 2500
+F 0 "#5V13" H 24500 2450 50  0001 C CNN
+F 1 "#метка-5V" H 24450 2350 50  0001 C CNN
+F 2 "" H 24500 2500 50  0001 C CNN
+F 3 "" H 24500 2500 50  0001 C CNN
+	1    24500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L eo-engine:#метка-GND #GND30
+U 1 1 63A2236D
+P 24500 3100
+F 0 "#GND30" H 24500 3150 50  0001 C CNN
+F 1 "#метка-GND" H 24550 3250 50  0001 C CNN
+F 2 "" H 24500 3100 50  0001 C CNN
+F 3 "" H 24500 3100 50  0001 C CNN
+	1    24500 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24500 2500 25000 2500
+Wire Wire Line
+	24500 3100 25000 3100
+Wire Wire Line
+	25000 2800 24500 2800
+Wire Wire Line
+	24500 2800 24500 3100
+Connection ~ 24500 3100
 Wire Bus Line
 	5500 20000 12500 20000
 Wire Bus Line
