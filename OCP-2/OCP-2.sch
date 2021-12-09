@@ -4417,10 +4417,10 @@ Wire Wire Line
 	21100 16750 24500 16750
 Wire Wire Line
 	21100 19250 23500 19250
-Text Notes 9000 9750 0    138  ~ 0
-MASTER
-Text Notes 16500 9750 0    138  ~ 0
-SLAVE
+Text Notes 7600 9750 0    138  ~ 0
+MASTER\n6 ВХОДОВ, 4 ВЫХОДА
+Text Notes 15050 9700 0    138  ~ 0
+SLAVE\n6 ВХОДОВ, 6 ВЫХОДА
 $Comp
 L eo-engine:Резистор*1кОм*0603 R65
 U 1 1 6327A26A
