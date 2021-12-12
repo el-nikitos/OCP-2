@@ -394,9 +394,7 @@ Wire Wire Line
 Wire Wire Line
 	17750 8600 17750 8750
 Wire Wire Line
-	17500 8000 17750 8000
-Wire Wire Line
-	17750 8000 17750 7750
+	17500 8000 18000 8000
 Wire Wire Line
 	17500 8300 19900 8300
 Entry Wire Line
@@ -723,10 +721,6 @@ Text Label 19750 17000 2    138  ~ 0
 AVCC.S
 Text Label 12250 17000 2    138  ~ 0
 AVCC.M
-Wire Wire Line
-	10000 8000 10250 8000
-Wire Wire Line
-	10250 8000 10250 7750
 $Comp
 L eo-engine:#метка-3V3 #3V2
 U 1 1 61A09916
@@ -910,31 +904,19 @@ Wire Wire Line
 Connection ~ 32250 4000
 Wire Wire Line
 	31250 3750 31250 4000
-$Comp
-L eo-engine:#метка-5V #5V5
-U 1 1 61A6BB11
-P 29750 1500
-F 0 "#5V5" H 29750 1450 50  0001 C CNN
-F 1 "#метка-5V" H 29700 1350 50  0001 C CNN
-F 2 "" H 29750 1500 50  0001 C CNN
-F 3 "" H 29750 1500 50  0001 C CNN
-	1    29750 1500
-	1    0    0    -1  
-$EndComp
-Connection ~ 29750 1500
 Text Label 29500 3000 0    138  ~ 0
 MC.OUT1
 $Comp
-L eo-engine:Стабилитрон*7,5В*SOD80 VD1
+L eo-engine:Стабилитрон*15В*SOD80 VD1
 U 1 1 61A9A0FD
 P 33500 3250
 F 0 "VD1" V 33840 3116 138 0000 R CNN
 F 1 "Стабилитрон*7,5В*SOD80" H 33500 3850 50  0001 C CNN
 F 2 "N_VD_HL:SOD-80" H 33600 3750 50  0001 C CNN
 F 3 "" V 33500 3250 50  0001 C CNN
-F 4 "7,5В" V 33617 3116 138 0000 R CNN "INFO"
-F 5 "https://www.chipdip.ru/product/bzv55-c7v5.115" H 33500 3250 138 0001 C CNN "LINK"
-F 6 "4" H 33500 3250 138 0001 C CNN "COST"
+F 4 "15В" V 33617 3116 138 0000 R CNN "INFO"
+F 5 "https://www.terraelectronica.ru/product/176228" H 33500 3250 138 0001 C CNN "LINK"
+F 6 "0.92" H 33500 3250 138 0001 C CNN "COST"
 	1    33500 3250
 	0    -1   -1   0   
 $EndComp
@@ -1084,31 +1066,19 @@ Wire Wire Line
 Connection ~ 32250 8000
 Wire Wire Line
 	31250 7750 31250 8000
-$Comp
-L eo-engine:#метка-5V #5V6
-U 1 1 61AE8AC0
-P 29750 5500
-F 0 "#5V6" H 29750 5450 50  0001 C CNN
-F 1 "#метка-5V" H 29700 5350 50  0001 C CNN
-F 2 "" H 29750 5500 50  0001 C CNN
-F 3 "" H 29750 5500 50  0001 C CNN
-	1    29750 5500
-	1    0    0    -1  
-$EndComp
-Connection ~ 29750 5500
 Text Label 29500 7000 0    138  ~ 0
 MC.OUT2
 $Comp
-L eo-engine:Стабилитрон*7,5В*SOD80 VD2
+L eo-engine:Стабилитрон*15В*SOD80 VD2
 U 1 1 61AE8AD0
 P 33500 7250
 F 0 "VD2" V 33840 7116 138 0000 R CNN
 F 1 "Стабилитрон*7,5В*SOD80" H 33500 7850 50  0001 C CNN
 F 2 "N_VD_HL:SOD-80" H 33600 7750 50  0001 C CNN
 F 3 "" V 33500 7250 50  0001 C CNN
-F 4 "7,5В" V 33617 7116 138 0000 R CNN "INFO"
-F 5 "https://www.chipdip.ru/product/bzv55-c7v5.115" H 33500 7250 138 0001 C CNN "LINK"
-F 6 "4" H 33500 7250 138 0001 C CNN "COST"
+F 4 "15В" V 33617 7116 138 0000 R CNN "INFO"
+F 5 "https://www.terraelectronica.ru/product/176228" H 33500 7250 138 0001 C CNN "LINK"
+F 6 "0.92" H 33500 7250 138 0001 C CNN "COST"
 	1    33500 7250
 	0    -1   -1   0   
 $EndComp
@@ -1258,31 +1228,19 @@ Wire Wire Line
 Connection ~ 32250 12000
 Wire Wire Line
 	31250 11750 31250 12000
-$Comp
-L eo-engine:#метка-5V #5V7
-U 1 1 61B17E5F
-P 29750 9500
-F 0 "#5V7" H 29750 9450 50  0001 C CNN
-F 1 "#метка-5V" H 29700 9350 50  0001 C CNN
-F 2 "" H 29750 9500 50  0001 C CNN
-F 3 "" H 29750 9500 50  0001 C CNN
-	1    29750 9500
-	1    0    0    -1  
-$EndComp
-Connection ~ 29750 9500
 Text Label 29500 11000 0    138  ~ 0
 MC.OUT3
 $Comp
-L eo-engine:Стабилитрон*7,5В*SOD80 VD3
+L eo-engine:Стабилитрон*15В*SOD80 VD3
 U 1 1 61B17E6F
 P 33500 11250
 F 0 "VD3" V 33840 11116 138 0000 R CNN
 F 1 "Стабилитрон*7,5В*SOD80" H 33500 11850 50  0001 C CNN
 F 2 "N_VD_HL:SOD-80" H 33600 11750 50  0001 C CNN
 F 3 "" V 33500 11250 50  0001 C CNN
-F 4 "7,5В" V 33617 11116 138 0000 R CNN "INFO"
-F 5 "https://www.chipdip.ru/product/bzv55-c7v5.115" H 33500 11250 138 0001 C CNN "LINK"
-F 6 "4" H 33500 11250 138 0001 C CNN "COST"
+F 4 "15В" V 33617 11116 138 0000 R CNN "INFO"
+F 5 "https://www.terraelectronica.ru/product/176228" H 33500 11250 138 0001 C CNN "LINK"
+F 6 "0.92" H 33500 11250 138 0001 C CNN "COST"
 	1    33500 11250
 	0    -1   -1   0   
 $EndComp
@@ -1431,31 +1389,19 @@ Wire Wire Line
 Connection ~ 32250 16000
 Wire Wire Line
 	31250 15750 31250 16000
-$Comp
-L eo-engine:#метка-5V #5V8
-U 1 1 61B2A62C
-P 29750 13500
-F 0 "#5V8" H 29750 13450 50  0001 C CNN
-F 1 "#метка-5V" H 29700 13350 50  0001 C CNN
-F 2 "" H 29750 13500 50  0001 C CNN
-F 3 "" H 29750 13500 50  0001 C CNN
-	1    29750 13500
-	1    0    0    -1  
-$EndComp
-Connection ~ 29750 13500
 Text Label 29500 15000 0    138  ~ 0
 MC.OUT4
 $Comp
-L eo-engine:Стабилитрон*7,5В*SOD80 VD4
+L eo-engine:Стабилитрон*15В*SOD80 VD4
 U 1 1 61B2A63C
 P 33500 15250
 F 0 "VD4" V 33840 15116 138 0000 R CNN
 F 1 "Стабилитрон*7,5В*SOD80" H 33500 15850 50  0001 C CNN
 F 2 "N_VD_HL:SOD-80" H 33600 15750 50  0001 C CNN
 F 3 "" V 33500 15250 50  0001 C CNN
-F 4 "7,5В" V 33617 15116 138 0000 R CNN "INFO"
-F 5 "https://www.chipdip.ru/product/bzv55-c7v5.115" H 33500 15250 138 0001 C CNN "LINK"
-F 6 "4" H 33500 15250 138 0001 C CNN "COST"
+F 4 "15В" V 33617 15116 138 0000 R CNN "INFO"
+F 5 "https://www.terraelectronica.ru/product/176228" H 33500 15250 138 0001 C CNN "LINK"
+F 6 "0.92" H 33500 15250 138 0001 C CNN "COST"
 	1    33500 15250
 	0    -1   -1   0   
 $EndComp
@@ -1604,31 +1550,19 @@ Wire Wire Line
 Connection ~ 32250 20000
 Wire Wire Line
 	31250 19750 31250 20000
-$Comp
-L eo-engine:#метка-5V #5V9
-U 1 1 61B3E7CF
-P 29750 17500
-F 0 "#5V9" H 29750 17450 50  0001 C CNN
-F 1 "#метка-5V" H 29700 17350 50  0001 C CNN
-F 2 "" H 29750 17500 50  0001 C CNN
-F 3 "" H 29750 17500 50  0001 C CNN
-	1    29750 17500
-	1    0    0    -1  
-$EndComp
-Connection ~ 29750 17500
 Text Label 29500 19000 0    138  ~ 0
 MC.OUT5
 $Comp
-L eo-engine:Стабилитрон*7,5В*SOD80 VD5
+L eo-engine:Стабилитрон*15В*SOD80 VD5
 U 1 1 61B3E7DF
 P 33500 19250
 F 0 "VD5" V 33840 19116 138 0000 R CNN
 F 1 "Стабилитрон*7,5В*SOD80" H 33500 19850 50  0001 C CNN
 F 2 "N_VD_HL:SOD-80" H 33600 19750 50  0001 C CNN
 F 3 "" V 33500 19250 50  0001 C CNN
-F 4 "7,5В" V 33617 19116 138 0000 R CNN "INFO"
-F 5 "https://www.chipdip.ru/product/bzv55-c7v5.115" H 33500 19250 138 0001 C CNN "LINK"
-F 6 "4" H 33500 19250 138 0001 C CNN "COST"
+F 4 "15В" V 33617 19116 138 0000 R CNN "INFO"
+F 5 "https://www.terraelectronica.ru/product/176228" H 33500 19250 138 0001 C CNN "LINK"
+F 6 "0.92" H 33500 19250 138 0001 C CNN "COST"
 	1    33500 19250
 	0    -1   -1   0   
 $EndComp
@@ -1797,31 +1731,19 @@ Wire Wire Line
 Connection ~ 45500 4000
 Wire Wire Line
 	44500 3750 44500 4000
-$Comp
-L eo-engine:#метка-5V #5V10
-U 1 1 61E26976
-P 43000 1500
-F 0 "#5V10" H 43000 1450 50  0001 C CNN
-F 1 "#метка-5V" H 42950 1350 50  0001 C CNN
-F 2 "" H 43000 1500 50  0001 C CNN
-F 3 "" H 43000 1500 50  0001 C CNN
-	1    43000 1500
-	1    0    0    -1  
-$EndComp
-Connection ~ 43000 1500
 Text Label 42750 3000 0    138  ~ 0
 MC.OUT6
 $Comp
-L eo-engine:Стабилитрон*7,5В*SOD80 VD11
+L eo-engine:Стабилитрон*15В*SOD80 VD11
 U 1 1 61E26985
 P 47000 3250
 F 0 "VD11" V 47340 3116 138 0000 R CNN
 F 1 "Стабилитрон*7,5В*SOD80" H 47000 3850 50  0001 C CNN
 F 2 "N_VD_HL:SOD-80" H 47100 3750 50  0001 C CNN
 F 3 "" V 47000 3250 50  0001 C CNN
-F 4 "7,5В" V 47117 3116 138 0000 R CNN "INFO"
-F 5 "https://www.chipdip.ru/product/bzv55-c7v5.115" H 47000 3250 138 0001 C CNN "LINK"
-F 6 "4" H 47000 3250 138 0001 C CNN "COST"
+F 4 "15В" V 47117 3116 138 0000 R CNN "INFO"
+F 5 "https://www.terraelectronica.ru/product/176228" H 47000 3250 138 0001 C CNN "LINK"
+F 6 "0.92" H 47000 3250 138 0001 C CNN "COST"
 	1    47000 3250
 	0    -1   -1   0   
 $EndComp
@@ -1968,31 +1890,19 @@ Wire Wire Line
 Connection ~ 45500 8000
 Wire Wire Line
 	44500 7750 44500 8000
-$Comp
-L eo-engine:#метка-5V #5V11
-U 1 1 61E26A0F
-P 43000 5500
-F 0 "#5V11" H 43000 5450 50  0001 C CNN
-F 1 "#метка-5V" H 42950 5350 50  0001 C CNN
-F 2 "" H 43000 5500 50  0001 C CNN
-F 3 "" H 43000 5500 50  0001 C CNN
-	1    43000 5500
-	1    0    0    -1  
-$EndComp
-Connection ~ 43000 5500
 Text Label 42750 7000 0    138  ~ 0
 MC.OUT7
 $Comp
-L eo-engine:Стабилитрон*7,5В*SOD80 VD12
+L eo-engine:Стабилитрон*15В*SOD80 VD12
 U 1 1 61E26A1E
 P 47000 7250
 F 0 "VD12" V 47340 7116 138 0000 R CNN
 F 1 "Стабилитрон*7,5В*SOD80" H 47000 7850 50  0001 C CNN
 F 2 "N_VD_HL:SOD-80" H 47100 7750 50  0001 C CNN
 F 3 "" V 47000 7250 50  0001 C CNN
-F 4 "7,5В" V 47117 7116 138 0000 R CNN "INFO"
-F 5 "https://www.chipdip.ru/product/bzv55-c7v5.115" H 47000 7250 138 0001 C CNN "LINK"
-F 6 "4" H 47000 7250 138 0001 C CNN "COST"
+F 4 "15В" V 47117 7116 138 0000 R CNN "INFO"
+F 5 "https://www.terraelectronica.ru/product/176228" H 47000 7250 138 0001 C CNN "LINK"
+F 6 "0.92" H 47000 7250 138 0001 C CNN "COST"
 	1    47000 7250
 	0    -1   -1   0   
 $EndComp
@@ -2139,31 +2049,19 @@ Wire Wire Line
 Connection ~ 45500 12000
 Wire Wire Line
 	44500 11750 44500 12000
-$Comp
-L eo-engine:#метка-5V #5V12
-U 1 1 61E26AA8
-P 43000 9500
-F 0 "#5V12" H 43000 9450 50  0001 C CNN
-F 1 "#метка-5V" H 42950 9350 50  0001 C CNN
-F 2 "" H 43000 9500 50  0001 C CNN
-F 3 "" H 43000 9500 50  0001 C CNN
-	1    43000 9500
-	1    0    0    -1  
-$EndComp
-Connection ~ 43000 9500
 Text Label 42750 11000 0    138  ~ 0
 MC.OUT8
 $Comp
-L eo-engine:Стабилитрон*7,5В*SOD80 VD13
+L eo-engine:Стабилитрон*15В*SOD80 VD13
 U 1 1 61E26AB7
 P 47000 11250
 F 0 "VD13" V 47340 11116 138 0000 R CNN
 F 1 "Стабилитрон*7,5В*SOD80" H 47000 11850 50  0001 C CNN
 F 2 "N_VD_HL:SOD-80" H 47100 11750 50  0001 C CNN
 F 3 "" V 47000 11250 50  0001 C CNN
-F 4 "7,5В" V 47117 11116 138 0000 R CNN "INFO"
-F 5 "https://www.chipdip.ru/product/bzv55-c7v5.115" H 47000 11250 138 0001 C CNN "LINK"
-F 6 "4" H 47000 11250 138 0001 C CNN "COST"
+F 4 "15В" V 47117 11116 138 0000 R CNN "INFO"
+F 5 "https://www.terraelectronica.ru/product/176228" H 47000 11250 138 0001 C CNN "LINK"
+F 6 "0.92" H 47000 11250 138 0001 C CNN "COST"
 	1    47000 11250
 	0    -1   -1   0   
 $EndComp
@@ -2310,31 +2208,19 @@ Wire Wire Line
 Connection ~ 45500 16000
 Wire Wire Line
 	44500 15750 44500 16000
-$Comp
-L eo-engine:#метка-5V #5V13
-U 1 1 61E26B41
-P 43000 13500
-F 0 "#5V13" H 43000 13450 50  0001 C CNN
-F 1 "#метка-5V" H 42950 13350 50  0001 C CNN
-F 2 "" H 43000 13500 50  0001 C CNN
-F 3 "" H 43000 13500 50  0001 C CNN
-	1    43000 13500
-	1    0    0    -1  
-$EndComp
-Connection ~ 43000 13500
 Text Label 42750 15000 0    138  ~ 0
 MC.OUT9
 $Comp
-L eo-engine:Стабилитрон*7,5В*SOD80 VD14
+L eo-engine:Стабилитрон*15В*SOD80 VD14
 U 1 1 61E26B50
 P 47000 15250
 F 0 "VD14" V 47340 15116 138 0000 R CNN
 F 1 "Стабилитрон*7,5В*SOD80" H 47000 15850 50  0001 C CNN
 F 2 "N_VD_HL:SOD-80" H 47100 15750 50  0001 C CNN
 F 3 "" V 47000 15250 50  0001 C CNN
-F 4 "7,5В" V 47117 15116 138 0000 R CNN "INFO"
-F 5 "https://www.chipdip.ru/product/bzv55-c7v5.115" H 47000 15250 138 0001 C CNN "LINK"
-F 6 "4" H 47000 15250 138 0001 C CNN "COST"
+F 4 "15В" V 47117 15116 138 0000 R CNN "INFO"
+F 5 "https://www.terraelectronica.ru/product/176228" H 47000 15250 138 0001 C CNN "LINK"
+F 6 "0.92" H 47000 15250 138 0001 C CNN "COST"
 	1    47000 15250
 	0    -1   -1   0   
 $EndComp
@@ -2481,31 +2367,19 @@ Wire Wire Line
 Connection ~ 45500 20000
 Wire Wire Line
 	44500 19750 44500 20000
-$Comp
-L eo-engine:#метка-5V #5V14
-U 1 1 61E26BDA
-P 43000 17500
-F 0 "#5V14" H 43000 17450 50  0001 C CNN
-F 1 "#метка-5V" H 42950 17350 50  0001 C CNN
-F 2 "" H 43000 17500 50  0001 C CNN
-F 3 "" H 43000 17500 50  0001 C CNN
-	1    43000 17500
-	1    0    0    -1  
-$EndComp
-Connection ~ 43000 17500
 Text Label 42750 19000 0    138  ~ 0
 MC.OUT10
 $Comp
-L eo-engine:Стабилитрон*7,5В*SOD80 VD15
+L eo-engine:Стабилитрон*15В*SOD80 VD15
 U 1 1 61E26BE9
 P 47000 19250
 F 0 "VD15" V 47340 19116 138 0000 R CNN
 F 1 "Стабилитрон*7,5В*SOD80" H 47000 19850 50  0001 C CNN
 F 2 "N_VD_HL:SOD-80" H 47100 19750 50  0001 C CNN
 F 3 "" V 47000 19250 50  0001 C CNN
-F 4 "7,5В" V 47117 19116 138 0000 R CNN "INFO"
-F 5 "https://www.chipdip.ru/product/bzv55-c7v5.115" H 47000 19250 138 0001 C CNN "LINK"
-F 6 "4" H 47000 19250 138 0001 C CNN "COST"
+F 4 "15В" V 47117 19116 138 0000 R CNN "INFO"
+F 5 "https://www.terraelectronica.ru/product/176228" H 47000 19250 138 0001 C CNN "LINK"
+F 6 "0.92" H 47000 19250 138 0001 C CNN "COST"
 	1    47000 19250
 	0    -1   -1   0   
 $EndComp
@@ -2682,114 +2556,89 @@ $EndComp
 $Comp
 L eo-engine:LDO*вход_18Вmax*выход_3,3В*ток_1,2АSOT-223 G1
 U 1 1 61AEC90E
-P 8750 2500
-F 0 "G1" H 10250 2800 138 0000 C CNN
-F 1 "LDO*вход_18Вmax*выход_3,3В*ток_1,2АSOT-223" H 9350 1450 50  0001 C CNN
-F 2 "N_VD_HL:Транзистор_NPN_SOT223_pnp" H 8750 2700 50  0001 C CNN
-F 3 "https://static.chipdip.ru/lib/529/DOC010529765.pdf" H 8750 2700 50  0001 C CNN
-F 4 "https://www.chipdip.ru/product/ldl1117s33r-stm" H 8750 2500 50  0001 C CNN "LINK"
-F 5 "LDO 3V3" H 9775 1900 138 0000 C CNN "INFO"
-	1    8750 2500
+P 11750 2500
+F 0 "G1" H 13250 2800 138 0000 C CNN
+F 1 "LDO*вход_18Вmax*выход_3,3В*ток_1,2АSOT-223" H 12350 1450 50  0001 C CNN
+F 2 "N_VD_HL:Транзистор_NPN_SOT223_pnp" H 11750 2700 50  0001 C CNN
+F 3 "https://static.chipdip.ru/lib/529/DOC010529765.pdf" H 11750 2700 50  0001 C CNN
+F 4 "https://www.chipdip.ru/product/ldl1117s33r-stm" H 11750 2500 50  0001 C CNN "LINK"
+F 5 "LDO 3V3" H 12775 1900 138 0000 C CNN "INFO"
+	1    11750 2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L eo-engine:Конденсатор*10мкФ*16В*0805 C6
 U 1 1 61AF12E6
-P 11000 3000
-F 0 "C6" H 11250 2875 138 0000 L CNN
-F 1 "Конденсатор*10мкФ*16В*0805" H 10900 3100 50  0001 C CNN
-F 2 "N_RLC:Конденсатор_SMD_IEC_0805" H 11000 3000 50  0001 C CNN
-F 3 "" H 11000 3000 50  0001 C CNN
-F 4 "10мкФ 16В" H 11250 2625 138 0000 L CNN "INFO"
-F 5 "https://www.terraelectronica.ru/product/863492" H 11000 3000 50  0001 C CNN "LINK"
-	1    11000 3000
+P 14000 3000
+F 0 "C6" H 14250 2875 138 0000 L CNN
+F 1 "Конденсатор*10мкФ*16В*0805" H 13900 3100 50  0001 C CNN
+F 2 "N_RLC:Конденсатор_SMD_IEC_0805" H 14000 3000 50  0001 C CNN
+F 3 "" H 14000 3000 50  0001 C CNN
+F 4 "10мкФ 16В" H 14250 2625 138 0000 L CNN "INFO"
+F 5 "https://www.terraelectronica.ru/product/863492" H 14000 3000 50  0001 C CNN "LINK"
+	1    14000 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L eo-engine:#метка-3V3 #3V5
 U 1 1 61AF1D5D
-P 11000 2500
-F 0 "#3V5" H 11000 2450 50  0001 C CNN
-F 1 "#метка-3V3" H 10950 2350 50  0001 C CNN
-F 2 "" H 11000 2500 50  0001 C CNN
-F 3 "" H 11000 2500 50  0001 C CNN
-	1    11000 2500
+P 14000 2500
+F 0 "#3V5" H 14000 2450 50  0001 C CNN
+F 1 "#метка-3V3" H 13950 2350 50  0001 C CNN
+F 2 "" H 14000 2500 50  0001 C CNN
+F 3 "" H 14000 2500 50  0001 C CNN
+	1    14000 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10750 2500 11000 2500
+	13750 2500 14000 2500
 Wire Wire Line
-	10750 2800 11000 2800
+	13750 2800 14000 2800
 Wire Wire Line
-	11000 2800 11000 2500
-Connection ~ 11000 2500
-$Comp
-L eo-engine:#метка-5V #5V1
-U 1 1 61C3B689
-P 8250 2500
-F 0 "#5V1" H 8250 2450 50  0001 C CNN
-F 1 "#метка-5V" H 8200 2350 50  0001 C CNN
-F 2 "" H 8250 2500 50  0001 C CNN
-F 3 "" H 8250 2500 50  0001 C CNN
-	1    8250 2500
-	1    0    0    -1  
-$EndComp
+	14000 2800 14000 2500
+Connection ~ 14000 2500
 Wire Wire Line
-	8250 2500 8750 2500
-Wire Wire Line
-	11000 2800 11000 3000
-Connection ~ 11000 2800
+	14000 2800 14000 3000
+Connection ~ 14000 2800
 $Comp
 L eo-engine:#метка-GND #GND6
 U 1 1 61D87A07
-P 11000 3750
-F 0 "#GND6" H 11000 3800 50  0001 C CNN
-F 1 "#метка-GND" H 11050 3900 50  0001 C CNN
-F 2 "" H 11000 3750 50  0001 C CNN
-F 3 "" H 11000 3750 50  0001 C CNN
-	1    11000 3750
+P 14000 3750
+F 0 "#GND6" H 14000 3800 50  0001 C CNN
+F 1 "#метка-GND" H 14050 3900 50  0001 C CNN
+F 2 "" H 14000 3750 50  0001 C CNN
+F 3 "" H 14000 3750 50  0001 C CNN
+	1    14000 3750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11000 3500 11000 3750
+	14000 3500 14000 3750
 $Comp
 L eo-engine:Конденсатор*10мкФ*16В*0805 C3
 U 1 1 61E2DAFE
-P 8250 3000
-F 0 "C3" H 8500 2875 138 0000 L CNN
-F 1 "Конденсатор*10мкФ*16В*0805" H 8150 3100 50  0001 C CNN
-F 2 "N_RLC:Конденсатор_SMD_IEC_0805" H 8250 3000 50  0001 C CNN
-F 3 "" H 8250 3000 50  0001 C CNN
-F 4 "10мкФ 16В" H 8500 2625 138 0000 L CNN "INFO"
-F 5 "https://www.terraelectronica.ru/product/863492" H 8250 3000 50  0001 C CNN "LINK"
-	1    8250 3000
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	8250 2500 8250 3000
-Connection ~ 8250 2500
-Wire Wire Line
-	8750 2800 8625 2800
-Wire Wire Line
-	8625 2800 8625 3625
-Wire Wire Line
-	8625 3625 8250 3625
-Wire Wire Line
-	8250 3625 8250 3500
-$Comp
-L eo-engine:#метка-GND #GND4
-U 1 1 61FCCC90
-P 8250 3750
-F 0 "#GND4" H 8250 3800 50  0001 C CNN
-F 1 "#метка-GND" H 8300 3900 50  0001 C CNN
-F 2 "" H 8250 3750 50  0001 C CNN
-F 3 "" H 8250 3750 50  0001 C CNN
-	1    8250 3750
+P 10000 3000
+F 0 "C3" H 10250 2875 138 0000 L CNN
+F 1 "Конденсатор*10мкФ*16В*0805" H 9900 3100 50  0001 C CNN
+F 2 "N_RLC:Конденсатор_SMD_IEC_0805" H 10000 3000 50  0001 C CNN
+F 3 "" H 10000 3000 50  0001 C CNN
+F 4 "10мкФ 16В" H 10250 2625 138 0000 L CNN "INFO"
+F 5 "https://www.terraelectronica.ru/product/863492" H 10000 3000 50  0001 C CNN "LINK"
+	1    10000 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8250 3750 8250 3625
-Connection ~ 8250 3625
+	10000 2500 10000 3000
+$Comp
+L eo-engine:#метка-GND #GND4
+U 1 1 61FCCC90
+P 10000 3750
+F 0 "#GND4" H 10000 3800 50  0001 C CNN
+F 1 "#метка-GND" H 10050 3900 50  0001 C CNN
+F 2 "" H 10000 3750 50  0001 C CNN
+F 3 "" H 10000 3750 50  0001 C CNN
+	1    10000 3750
+	1    0    0    -1  
+$EndComp
 $Comp
 L eo-engine:Резонатор*25МГц*HC-49U ZQ1
 U 1 1 62150208
@@ -3035,28 +2884,6 @@ Wire Bus Line
 	12500 8000 13500 8000
 Wire Bus Line
 	20000 8000 21000 8000
-$Comp
-L eo-engine:#метка-5V #5V2
-U 1 1 631BA3DE
-P 10250 7750
-F 0 "#5V2" H 10250 7700 50  0001 C CNN
-F 1 "#метка-5V" H 10200 7600 50  0001 C CNN
-F 2 "" H 10250 7750 50  0001 C CNN
-F 3 "" H 10250 7750 50  0001 C CNN
-	1    10250 7750
-	1    0    0    -1  
-$EndComp
-$Comp
-L eo-engine:#метка-5V #5V4
-U 1 1 6327DD4D
-P 17750 7750
-F 0 "#5V4" H 17750 7700 50  0001 C CNN
-F 1 "#метка-5V" H 17700 7600 50  0001 C CNN
-F 2 "" H 17750 7750 50  0001 C CNN
-F 3 "" H 17750 7750 50  0001 C CNN
-	1    17750 7750
-	1    0    0    -1  
-$EndComp
 Entry Wire Line
 	5400 9500 5500 9600
 Entry Wire Line
@@ -3770,69 +3597,44 @@ Wire Wire Line
 $Comp
 L eo-engine:Клеммник*шаг_3,5*3контактов*1ряд*вертикальная XP2
 U 1 1 63A1FC37
-P 15500 2500
-F 0 "XP2" H 15700 3050 138 0000 L CNN
-F 1 "Клеммник*шаг_3,5*3контактов*1ряд*вертикальная" H 15500 3000 50  0001 C CNN
-F 2 "N_X:Клеммник_15EDGVC-3.5-03P" H 15500 3200 50  0001 C CNN
-F 3 "" H 15500 2500 50  0001 C CNN
-F 4 "15EDGVC-3.5-03P" H 15500 1500 138 0000 L CNN "INFO"
-F 5 "https://www.terraelectronica.ru/product/1027586" H 15500 3100 50  0001 C CNN "LINK"
-	1    15500 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L eo-engine:#метка-5V #5V3
-U 1 1 63A22361
-P 15000 2500
-F 0 "#5V3" H 15000 2450 50  0001 C CNN
-F 1 "#метка-5V" H 14950 2350 50  0001 C CNN
-F 2 "" H 15000 2500 50  0001 C CNN
-F 3 "" H 15000 2500 50  0001 C CNN
-	1    15000 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L eo-engine:#метка-GND #GND8
-U 1 1 63A2236D
-P 15000 3100
-F 0 "#GND8" H 15000 3150 50  0001 C CNN
-F 1 "#метка-GND" H 15050 3250 50  0001 C CNN
-F 2 "" H 15000 3100 50  0001 C CNN
-F 3 "" H 15000 3100 50  0001 C CNN
-	1    15000 3100
-	1    0    0    -1  
+P 9000 2500
+F 0 "XP2" H 9200 3050 138 0000 L CNN
+F 1 "Клеммник*шаг_3,5*3контактов*1ряд*вертикальная" H 9000 3000 50  0001 C CNN
+F 2 "N_X:Клеммник_15EDGVC-3.5-03P" H 9000 3200 50  0001 C CNN
+F 3 "" H 9000 2500 50  0001 C CNN
+F 4 "15EDGVC-3.5-03P" H 8600 1500 138 0000 L CNN "INFO"
+F 5 "https://www.terraelectronica.ru/product/1027586" H 9000 3100 50  0001 C CNN "LINK"
+	1    9000 2500
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	15000 2500 15500 2500
+	9500 3100 9000 3100
 Wire Wire Line
-	15000 3100 15500 3100
+	9000 2800 9500 2800
 Wire Wire Line
-	15500 2800 15000 2800
-Wire Wire Line
-	15000 2800 15000 3100
-Connection ~ 15000 3100
+	9500 2800 9500 3100
 $Comp
 L eo-engine:Конденсатор*10мкФ*16В*0805 C7
 U 1 1 61CE14D1
-P 12750 3000
-F 0 "C7" H 13000 2875 138 0000 L CNN
-F 1 "Конденсатор*10мкФ*16В*0805" H 12650 3100 50  0001 C CNN
-F 2 "N_RLC:Конденсатор_SMD_IEC_0805" H 12750 3000 50  0001 C CNN
-F 3 "" H 12750 3000 50  0001 C CNN
-F 4 "10мкФ 16В" H 13000 2625 138 0000 L CNN "INFO"
-F 5 "https://www.terraelectronica.ru/product/863492" H 12750 3000 50  0001 C CNN "LINK"
-	1    12750 3000
+P 15750 3000
+F 0 "C7" H 16000 2875 138 0000 L CNN
+F 1 "Конденсатор*10мкФ*16В*0805" H 15650 3100 50  0001 C CNN
+F 2 "N_RLC:Конденсатор_SMD_IEC_0805" H 15750 3000 50  0001 C CNN
+F 3 "" H 15750 3000 50  0001 C CNN
+F 4 "10мкФ 16В" H 16000 2625 138 0000 L CNN "INFO"
+F 5 "https://www.terraelectronica.ru/product/863492" H 15750 3000 50  0001 C CNN "LINK"
+	1    15750 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11000 2800 12750 2800
+	14000 2800 15750 2800
 Wire Wire Line
-	12750 2800 12750 3000
+	15750 2800 15750 3000
 Wire Wire Line
-	11000 3750 12750 3750
+	14000 3750 15750 3750
 Wire Wire Line
-	12750 3750 12750 3500
-Connection ~ 11000 3750
+	15750 3750 15750 3500
+Connection ~ 14000 3750
 Text Label 5750 11200 0    138  ~ 0
 GND2.M
 Text Label 5750 11500 0    138  ~ 0
@@ -5041,7 +4843,7 @@ Wire Wire Line
 	51900 10100 51900 13800
 Wire Wire Line
 	52150 10400 52150 17800
-Text Notes 6500 2000 0    138  ~ 0
+Text Notes 9500 2000 0    138  ~ 0
 вход мб 12В,\nкондей заменить на 25В
 $Comp
 L eo-engine:Диод*75В*0,2А*SOD-323 VD33
@@ -5232,15 +5034,15 @@ Wire Wire Line
 Wire Wire Line
 	31350 18250 31500 18250
 Wire Wire Line
-	32250 2250 35000 2250
+	32250 2250 33500 2250
 Wire Wire Line
-	32250 6250 35000 6250
+	32250 6250 33500 6250
 Wire Wire Line
-	32250 10250 35000 10250
+	32250 10250 33500 10250
 Wire Wire Line
-	32250 14250 35000 14250
+	32250 14250 33500 14250
 Wire Wire Line
-	32250 18250 35000 18250
+	32250 18250 33500 18250
 Connection ~ 48000 1500
 Wire Wire Line
 	48000 1500 49650 1500
@@ -5311,6 +5113,235 @@ Wire Wire Line
 	47000 8000 48000 8000
 Wire Wire Line
 	47000 4000 48000 4000
+Connection ~ 33500 2250
+Wire Wire Line
+	33500 2250 35000 2250
+Connection ~ 33500 6250
+Wire Wire Line
+	33500 6250 35000 6250
+Connection ~ 33500 10250
+Wire Wire Line
+	33500 10250 35000 10250
+Connection ~ 33500 14250
+Wire Wire Line
+	33500 14250 35000 14250
+Connection ~ 33500 18250
+Wire Wire Line
+	33500 18250 35000 18250
+$Comp
+L eo-engine:#метка-4...15V #4...15V1
+U 1 1 61BFE016
+P 10000 2500
+F 0 "#4...15V1" H 10000 2450 50  0001 C CNN
+F 1 "#метка-4...15V" H 9950 2350 50  0001 C CNN
+F 2 "" H 10000 2500 50  0001 C CNN
+F 3 "" H 10000 2500 50  0001 C CNN
+	1    10000 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 10000 2500
+$Comp
+L eo-engine:#метка-4...15V #4...15V4
+U 1 1 61C0061C
+P 29750 1500
+F 0 "#4...15V4" H 29750 1450 50  0001 C CNN
+F 1 "#метка-4...15V" H 29700 1350 50  0001 C CNN
+F 2 "" H 29750 1500 50  0001 C CNN
+F 3 "" H 29750 1500 50  0001 C CNN
+	1    29750 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 29750 1500
+$Comp
+L eo-engine:#метка-4...15V #4...15V5
+U 1 1 61C01710
+P 29750 5500
+F 0 "#4...15V5" H 29750 5450 50  0001 C CNN
+F 1 "#метка-4...15V" H 29700 5350 50  0001 C CNN
+F 2 "" H 29750 5500 50  0001 C CNN
+F 3 "" H 29750 5500 50  0001 C CNN
+	1    29750 5500
+	1    0    0    -1  
+$EndComp
+Connection ~ 29750 5500
+$Comp
+L eo-engine:#метка-4...15V #4...15V6
+U 1 1 61C7E3EB
+P 29750 9500
+F 0 "#4...15V6" H 29750 9450 50  0001 C CNN
+F 1 "#метка-4...15V" H 29700 9350 50  0001 C CNN
+F 2 "" H 29750 9500 50  0001 C CNN
+F 3 "" H 29750 9500 50  0001 C CNN
+	1    29750 9500
+	1    0    0    -1  
+$EndComp
+Connection ~ 29750 9500
+$Comp
+L eo-engine:#метка-4...15V #4...15V7
+U 1 1 61D7A9AE
+P 29750 13500
+F 0 "#4...15V7" H 29750 13450 50  0001 C CNN
+F 1 "#метка-4...15V" H 29700 13350 50  0001 C CNN
+F 2 "" H 29750 13500 50  0001 C CNN
+F 3 "" H 29750 13500 50  0001 C CNN
+	1    29750 13500
+	1    0    0    -1  
+$EndComp
+Connection ~ 29750 13500
+$Comp
+L eo-engine:#метка-4...15V #4...15V8
+U 1 1 61D7B15C
+P 29750 17500
+F 0 "#4...15V8" H 29750 17450 50  0001 C CNN
+F 1 "#метка-4...15V" H 29700 17350 50  0001 C CNN
+F 2 "" H 29750 17500 50  0001 C CNN
+F 3 "" H 29750 17500 50  0001 C CNN
+	1    29750 17500
+	1    0    0    -1  
+$EndComp
+Connection ~ 29750 17500
+$Comp
+L eo-engine:#метка-4...15V #4...15V9
+U 1 1 61D7B5FB
+P 43000 1500
+F 0 "#4...15V9" H 43000 1450 50  0001 C CNN
+F 1 "#метка-4...15V" H 42950 1350 50  0001 C CNN
+F 2 "" H 43000 1500 50  0001 C CNN
+F 3 "" H 43000 1500 50  0001 C CNN
+	1    43000 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 43000 1500
+$Comp
+L eo-engine:#метка-4...15V #4...15V10
+U 1 1 61D7BF03
+P 43000 5500
+F 0 "#4...15V10" H 43000 5450 50  0001 C CNN
+F 1 "#метка-4...15V" H 42950 5350 50  0001 C CNN
+F 2 "" H 43000 5500 50  0001 C CNN
+F 3 "" H 43000 5500 50  0001 C CNN
+	1    43000 5500
+	1    0    0    -1  
+$EndComp
+Connection ~ 43000 5500
+$Comp
+L eo-engine:#метка-4...15V #4...15V11
+U 1 1 61D7C6BC
+P 43000 9500
+F 0 "#4...15V11" H 43000 9450 50  0001 C CNN
+F 1 "#метка-4...15V" H 42950 9350 50  0001 C CNN
+F 2 "" H 43000 9500 50  0001 C CNN
+F 3 "" H 43000 9500 50  0001 C CNN
+	1    43000 9500
+	1    0    0    -1  
+$EndComp
+Connection ~ 43000 9500
+$Comp
+L eo-engine:#метка-4...15V #4...15V12
+U 1 1 61D7D0EC
+P 43000 13500
+F 0 "#4...15V12" H 43000 13450 50  0001 C CNN
+F 1 "#метка-4...15V" H 42950 13350 50  0001 C CNN
+F 2 "" H 43000 13500 50  0001 C CNN
+F 3 "" H 43000 13500 50  0001 C CNN
+	1    43000 13500
+	1    0    0    -1  
+$EndComp
+Connection ~ 43000 13500
+$Comp
+L eo-engine:#метка-4...15V #4...15V13
+U 1 1 61D7DB6C
+P 43000 17500
+F 0 "#4...15V13" H 43000 17450 50  0001 C CNN
+F 1 "#метка-4...15V" H 42950 17350 50  0001 C CNN
+F 2 "" H 43000 17500 50  0001 C CNN
+F 3 "" H 43000 17500 50  0001 C CNN
+	1    43000 17500
+	1    0    0    -1  
+$EndComp
+Connection ~ 43000 17500
+$Comp
+L eo-engine:#метка-4...15V #4...15V2
+U 1 1 61D822AF
+P 10500 7000
+F 0 "#4...15V2" H 10500 6950 50  0001 C CNN
+F 1 "#метка-4...15V" H 10450 6850 50  0001 C CNN
+F 2 "" H 10500 7000 50  0001 C CNN
+F 3 "" H 10500 7000 50  0001 C CNN
+	1    10500 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L eo-engine:Диод*75В*0,2А*SOD-323 VD43
+U 1 1 61D83A4A
+P 10500 7750
+F 0 "VD43" V 10750 7100 138 0000 L CNN
+F 1 "Диод*75В*0,2А*SOD-323" H 10500 8350 50  0001 C CNN
+F 2 "N_VD_HL:D_SOD-323_HandSoldering" H 10600 8250 50  0001 C CNN
+F 3 "" V 10500 7750 50  0001 C CNN
+F 4 "75В 0,2А" H 10300 7500 138 0001 L CNN "INFO"
+F 5 "https://www.chipdip.ru/product/bas416.115" H 10500 7750 138 0001 C CNN "LINK"
+F 6 "13" H 10500 7750 138 0001 C CNN "COST"
+	1    10500 7750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10500 7000 10500 7250
+Wire Wire Line
+	10500 7750 10500 8000
+$Comp
+L eo-engine:#метка-4...15V #4...15V3
+U 1 1 61F7D976
+P 18000 7000
+F 0 "#4...15V3" H 18000 6950 50  0001 C CNN
+F 1 "#метка-4...15V" H 17950 6850 50  0001 C CNN
+F 2 "" H 18000 7000 50  0001 C CNN
+F 3 "" H 18000 7000 50  0001 C CNN
+	1    18000 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L eo-engine:Диод*75В*0,2А*SOD-323 VD44
+U 1 1 61F7D983
+P 18000 7750
+F 0 "VD44" V 18250 7100 138 0000 L CNN
+F 1 "Диод*75В*0,2А*SOD-323" H 18000 8350 50  0001 C CNN
+F 2 "N_VD_HL:D_SOD-323_HandSoldering" H 18100 8250 50  0001 C CNN
+F 3 "" V 18000 7750 50  0001 C CNN
+F 4 "75В 0,2А" H 17800 7500 138 0001 L CNN "INFO"
+F 5 "https://www.chipdip.ru/product/bas416.115" H 18000 7750 138 0001 C CNN "LINK"
+F 6 "13" H 18000 7750 138 0001 C CNN "COST"
+	1    18000 7750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	18000 7000 18000 7250
+Wire Wire Line
+	18000 7750 18000 8000
+Wire Wire Line
+	10000 2500 11750 2500
+Wire Wire Line
+	10000 3500 10000 3750
+Wire Wire Line
+	11750 2800 11500 2800
+Wire Wire Line
+	11500 2800 11500 3750
+Wire Wire Line
+	11500 3750 10000 3750
+Connection ~ 10000 3750
+Wire Wire Line
+	9500 3100 9500 3750
+Wire Wire Line
+	9500 3750 10000 3750
+Connection ~ 9500 3100
+Wire Wire Line
+	9000 2500 10000 2500
+Text Label 17950 8000 2    138  ~ 0
+5V.S
+Text Label 10450 8000 2    138  ~ 0
+5V.M
+Wire Wire Line
+	10000 8000 10500 8000
 Wire Bus Line
 	5500 20000 12500 20000
 Wire Bus Line
