@@ -3105,8 +3105,6 @@ Entry Wire Line
 	21000 12250 21100 12350
 Entry Wire Line
 	21000 11950 21100 12050
-Text Notes 21450 8125 0    138  ~ 0
-подключить SPI
 NoConn ~ 3250 4300
 Text Label 28000 9050 2    138  ~ 0
 LEDA
@@ -4991,8 +4989,6 @@ Wire Wire Line
 	51900 10100 51900 13800
 Wire Wire Line
 	52150 10400 52150 17800
-Text Notes 9500 2000 0    138  ~ 0
-вход мб 12В,\nкондей заменить на 25В
 $Comp
 L eo-engine:Диод*75В*0,2А*SOD-323 VD4
 U 1 1 61BDF0CA
@@ -5536,4 +5532,6 @@ Wire Bus Line
 	28250 1000 28250 20000
 Wire Bus Line
 	12500 8000 12500 20000
+Text Notes 9500 2000 0    138  ~ 0
+вход мб 12В,\nкондей заменить на 25В
 $EndSCHEMATC
