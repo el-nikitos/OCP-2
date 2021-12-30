@@ -1,6 +1,6 @@
 #include "etherShield.h"
 #include "ETHER_28J60.h"
-
+//#define BUFFER_SIZE 700 - поменять в либе в ETHER_28J60.cpp
 #define DOUT_1    0xB0
 #define DOUT_2    0xD7
 #define DOUT_3    0xD6
@@ -67,83 +67,162 @@ void loop() {
 }
 
 void http_TX(){
-  ethernet.print("<A HREF='/'>refresh</A></p>\n");
-
   if ( (byte_m_output&0b00000001)>0 )  {
-    http_dout_draw( "H", "1", "off" );
+    http_gpio_draw( "H", "1", "off", true );
   } else {
-    http_dout_draw( "L", "1", "on" );
+    http_gpio_draw( "L", "1", "on", true );
   }
   //
   if ( (byte_m_output&0b00000010)>0 )  {
-    http_dout_draw( "H", "2", "off" );
+    http_gpio_draw( "H", "2", "off", true );
   } else {
-    http_dout_draw( "L", "2", "on" );
+    http_gpio_draw( "L", "2", "on", true );
   }
   //
   if ( (byte_m_output&0b00000100)>0 )  {
-    http_dout_draw( "H", "3", "off" );
+    http_gpio_draw( "H", "3", "off", true );
   } else {
-    http_dout_draw( "L", "3", "on" );
+    http_gpio_draw( "L", "3", "on", true );
   }
   //
   if ( (byte_m_output&0b00001000)>0 )  {
-    http_dout_draw( "H", "4", "off" );
+    http_gpio_draw( "H", "4", "off", true );
   } else {
-    http_dout_draw( "L", "4", "on" );
+    http_gpio_draw( "L", "4", "on", true );
   }
   //
   if ( (byte_m_output&0b00010000)>0 )  {
-    http_dout_draw( "H", "5", "off" );
+    http_gpio_draw( "H", "5", "off", true );
   } else {
-    http_dout_draw( "L", "5", "on" );
+    http_gpio_draw( "L", "5", "on", true );
   }
   //
   if ( (byte_m_output&0b00100000)>0 )  {
-    http_dout_draw( "H", "6", "off" );
+    http_gpio_draw( "H", "6", "off", true );
   } else {
-    http_dout_draw( "L", "6", "on" );
+    http_gpio_draw( "L", "6", "on", true );
   }
   //
   if ( (byte_s_output&0b00000001)>0 )  {
-    http_dout_draw( "H", "7", "off" );
+    http_gpio_draw( "H", "7", "off", true );
   } else {
-    http_dout_draw( "L", "7", "on" );
+    http_gpio_draw( "L", "7", "on", true );
   }
   //
   if ( (byte_s_output&0b00000010)>0 )  {
-    http_dout_draw( "H", "8", "off" );
+    http_gpio_draw( "H", "8", "off", true );
   } else {
-    http_dout_draw( "L", "8", "on" );
+    http_gpio_draw( "L", "8", "on", true );
   }
   //
   if ( (byte_s_output&0b00000100)>0 )  {
-    http_dout_draw( "H", "9", "off" );
+    http_gpio_draw( "H", "9", "off", true );
   } else {
-    http_dout_draw( "L", "9", "on" );
+    http_gpio_draw( "L", "9", "on", true );
   }
   //
   if ( (byte_s_output&0b00001000)>0 )  {
-    http_dout_draw( "H", "10", "off" );
+    http_gpio_draw( "H", "10", "off", true );
   } else {
-    http_dout_draw( "L", "10", "on" );
+    http_gpio_draw( "L", "10", "on", true );
+  }
+  //
+  ethernet.print("<A HREF='/'>refresh</A></p>\n");
+  //
+  if ( (byte_m_input&0b00000001)>0 )  {
+    http_gpio_draw( "H", "1", "", false );
+  } else {
+    http_gpio_draw( "L", "1", "", false );
+  }
+  //
+  if ( (byte_m_input&0b00000010)>0 )  {
+    http_gpio_draw( "H", "2", "", false );
+  } else {
+    http_gpio_draw( "L", "2", "", false );
+  }
+  //
+  if ( (byte_m_input&0b00000100)>0 )  {
+    http_gpio_draw( "H", "3", "", false );
+  } else {
+    http_gpio_draw( "L", "3", "", false );
+  }
+  //
+  if ( (byte_m_input&0b00001000)>0 )  {
+    http_gpio_draw( "H", "4", "", false );
+  } else {
+    http_gpio_draw( "L", "4", "", false );
+  }
+  //
+  if ( (byte_m_input&0b00010000)>0 )  {
+    http_gpio_draw( "H", "5", "", false );
+  } else {
+    http_gpio_draw( "L", "5", "", false );
+  }
+  //
+  if ( (byte_m_input&0b00100000)>0 )  {
+    http_gpio_draw( "H", "6", "", false );
+  } else {
+    http_gpio_draw( "L", "6", "", false );
+  }
+  //
+  if ( (byte_m_input&0b01000000)>0 )  {
+    http_gpio_draw( "H", "7", "", false );
+  } else {
+    http_gpio_draw( "L", "7", "", false );
+  }
+  //
+  if ( (byte_m_input&0b10000000)>0 )  {
+    http_gpio_draw( "H", "8", "", false );
+  } else {
+    http_gpio_draw( "L", "8", "", false );
+  }
+  //
+  if ( (byte_s_input&0b00000001)>0 )  {
+    http_gpio_draw( "H", "9", "", false );
+  } else {
+    http_gpio_draw( "L", "9", "", false );
+  }
+  //
+  if ( (byte_s_input&0b00000010)>0 )  {
+    http_gpio_draw( "H", "10", "", false );
+  } else {
+    http_gpio_draw( "L", "10", "", false );
+  }
+  //
+  if ( (byte_s_input&0b00000100)>0 )  {
+    http_gpio_draw( "H", "11", "", false );
+  } else {
+    http_gpio_draw( "L", "11", "", false );
+  }
+  //
+  if ( (byte_s_input&0b00001000)>0 )  {
+    http_gpio_draw( "H", "12", "", false );
+  } else {
+    http_gpio_draw( "L", "12", "", false );
   }
   //
 }
 
-void http_dout_draw(char* str_status, char* str_channel, char* str_new_status) {
-  ethernet.print( "<b>OUT" );//out1_off
-  ethernet.print( str_channel );
-  ethernet.print( ":" );
-  ethernet.print( str_status );
-  ethernet.print( "</b>" );
-  ethernet.print( "<A HREF='" );
-  ethernet.print( str_channel );
-  ethernet.print( str_new_status );
-  ethernet.print( "'> Turn " );
-  ethernet.print( str_new_status );
-  ethernet.print( "</A>" );
-
+void http_gpio_draw(char* str_status, char* str_channel, char* str_new_status, boolean b_dout) {
+  if (b_dout == true) {
+    ethernet.print( "<b>OUT" );//
+    ethernet.print( str_channel );
+    ethernet.print( ":" );
+    ethernet.print( str_status );
+    ethernet.print( "</b>" );
+    ethernet.print( "<A HREF='" );
+    ethernet.print( str_channel );
+    ethernet.print( str_new_status );
+    ethernet.print( " '>" );
+    ethernet.print( str_new_status );
+    ethernet.print( "</A>" );
+  } else {
+    ethernet.print( "<b>IN" );//
+    ethernet.print( str_channel );
+    ethernet.print( ":" );
+    ethernet.print( str_status );
+    ethernet.print( "</b>" );
+  }
   ethernet.print("</p>\n");
 }
 

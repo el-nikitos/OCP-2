@@ -1,3 +1,12 @@
+#define ADC0     0x90
+#define ADC1     0x91
+#define ADC2     0x92
+#define ADC3     0x93
+#define ADC4     0x94
+#define ADC5     0x95
+#define ADC6     0x96
+#define ADC7     0x97
+
 #define pinB0    0xB0
 #define pinB1    0xB1
 #define pinB2    0xB2
