@@ -1,6 +1,6 @@
 #include "etherShield.h"
 #include "ETHER_28J60.h"
-//#define BUFFER_SIZE 700 - поменять в либе в ETHER_28J60.cpp
+//#define BUFFER_SIZE 384 - поменять в либе в ETHER_28J60.cpp
 #define DOUT_1    0xB0
 #define DOUT_2    0xD7
 #define DOUT_3    0xD6
@@ -45,13 +45,16 @@ void setup() {
   
   _pinMode(ETH_RES, OUTPUT);
 
-  _digitalWrite(ETH_RES, HIGH);
+  _digitalWrite(ETH_RES, LOW);
   _digitalWrite(DOUT_1, LOW);
   _digitalWrite(DOUT_2, LOW);
   _digitalWrite(DOUT_3, LOW);
   _digitalWrite(DOUT_4, LOW);
   _digitalWrite(DOUT_5, LOW);
   _digitalWrite(DOUT_6, LOW);
+  
+  delay(100);
+  _digitalWrite(ETH_RES, HIGH);
 
   ethernet.setup(mac, ip, port);
 
@@ -78,16 +81,17 @@ void loop() {
 
 void http_TX(){
   //
+  //ethernet.print( "<table border='1'>" );
   http_open_table_draw( "DOUT" );
   http_grid_name_draw( 10 );
   http_dout_status_draw();
-  /*
+  
   ethernet.print( "\n" );
-  for (int i=0;i<150;i++) {
+  for (int i=0;i<32;i++) {
     ethernet.print( " " );
   }
   ethernet.print( "\n" );
-  */
+  
   http_dout_commands_draw();
 
   //ethernet.print( "</table>\n" );
@@ -101,40 +105,31 @@ void http_TX(){
   //
   ethernet.print("<A HREF='/'>refresh</A></p>\n");
   //
+  http_byte_print("OUTM", byte_m_output);
+  http_byte_print("OUTS", byte_s_output);
+  http_byte_print("INM", byte_m_input);
+  http_byte_print("INS", byte_s_input);
+}
+
+void http_byte_print(char* str_byte_name, byte byte_to_print)  {
+  ethernet.print( "<p>" );
+  ethernet.print( str_byte_name );
+  ethernet.print( ":" );
+  ethernet.print( byte_to_print );
+  ethernet.print( "</p>\n" );
 }
 
 void http_open_table_draw(char* str_caption) {
   ethernet.print( "<table border='1'>" );
   ethernet.print( "<caption>" );
+  //ethernet.print( "<tr><th>" );
   ethernet.print( str_caption );
   ethernet.print( "</caption>\n" );
+  //ethernet.print( "</th></tr>\n" );
 }
 
 void http_close_table_draw()  {
   ethernet.print( "</table>\n" );
-}
-
-void http_gpio_draw(char* str_status, char* str_channel, char* str_new_status, boolean b_dout) {
-  if (b_dout == true) {
-    ethernet.print( "<b>OUT" );//
-    ethernet.print( str_channel );
-    ethernet.print( ":" );
-    ethernet.print( str_status );
-    ethernet.print( "</b>" );
-    ethernet.print( "<A HREF='" );
-    ethernet.print( str_channel );
-    ethernet.print( str_new_status );
-    ethernet.print( " '>" );
-    ethernet.print( str_new_status );
-    ethernet.print( "</A>" );
-  } else {
-    ethernet.print( "<b>IN" );//
-    ethernet.print( str_channel );
-    ethernet.print( ":" );
-    ethernet.print( str_status );
-    ethernet.print( "</b>" );
-  }
-  ethernet.print("</p>\n");
 }
 
 void http_grid_name_draw(byte byte_count) {
@@ -247,7 +242,7 @@ void draw_grid_command(byte byte_status, char* str_channel) {
   } else {
     ethernet.print( "<td><A HREF='" );
     ethernet.print( str_channel );
-    ethernet.print( "H'>ON</A></td>" );
+    ethernet.print( "H'>ON </A></td>" );
   }
 }
 
