@@ -1,3 +1,5 @@
+#include <Wire.h>
+
 #include "etherShield.h"
 #include "ETHER_28J60.h"
 //#define BUFFER_SIZE 384 - поменять в либе в ETHER_28J60.cpp
@@ -23,6 +25,11 @@
 #define DIN_6     A3
 #define DIN_7     3
 #define DIN_8     4
+
+#define i2c_mask_OUTPUT 0xF0
+#define i2c_slave_add   0x11
+
+#define i2c_reg_INPUT   0x01
 
 static uint8_t mac[6] = {0x54, 0x55, 0x58, 0x10, 0x00, 0x24};
 static uint8_t ip[4] = {192, 168, 137, 15};
@@ -52,6 +59,8 @@ void setup() {
   _digitalWrite(DOUT_4, LOW);
   _digitalWrite(DOUT_5, LOW);
   _digitalWrite(DOUT_6, LOW);
+
+  Wire.begin();
   
   delay(100);
   _digitalWrite(ETH_RES, HIGH);
@@ -356,31 +365,11 @@ void update_outputs() {
   } else {
     _digitalWrite(DOUT_6, LOW);
   }
-/*
-  if (DOUT_7_turnon == true)  {
-    _digitalWrite(DOUT_7, HIGH);
-  } else {
-    _digitalWrite(DOUT_7, LOW);
-  }
 
-  if (DOUT_8_turnon == true)  {
-    _digitalWrite(DOUT_8, HIGH);
-  } else {
-    _digitalWrite(DOUT_8, LOW);
-  }
-
-  if (DOUT_9_turnon == true)  {
-    _digitalWrite(DOUT_9, HIGH);
-  } else {
-    _digitalWrite(DOUT_9, LOW);
-  }
-
-  if (DOUT_10_turnon == true)  {
-    _digitalWrite(DOUT_10, HIGH);
-  } else {
-    _digitalWrite(DOUT_10, LOW);
-  }
-*/
+  Wire.beginTransmission( i2c_slave_add );
+  Wire.write( (byte_s_output | i2c_mask_OUTPUT) ); 
+  Wire.endTransmission();
+  
 }
 
 void update_inputs() {
@@ -441,4 +430,14 @@ void update_inputs() {
   } else {
     byte_m_input &= ~(1<<7);
   }
+
+  Wire.beginTransmission( i2c_slave_add );
+  Wire.write( i2c_reg_INPUT ); 
+  Wire.endTransmission();
+  Wire.requestFrom(i2c_slave_add, 1);
+
+  while (Wire.available()) { 
+    byte_s_input = Wire.read(); 
+  }
+  
 }
