@@ -76,7 +76,7 @@ void loop() {
   if (params = ethernet.serviceRequest())
   {
     request_execution( params );
-
+    
     http_TX();
     
     ethernet.respond();
@@ -86,6 +86,8 @@ void loop() {
   update_outputs();
   update_inputs();
   delay(10);
+
+  main_algoritm();
 }
 
 void http_TX(){
